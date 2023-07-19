@@ -29,3 +29,12 @@
   do Mit App Inventor e dê as permissões para instalar. Procure o download no seu celular e clique para instalar. Pronto! o aplicativo será instalado, é seguro!
 
   # Sprint 1
+
+ -  ### Git e GitHub
+
+    Do básico ao avançado. Conhecendo o que é, quais as diferenças, quais os comandos fundamentais, auxiliares e como administrar os repositórios.
+
+ -  ### Linux
+
+
+    
