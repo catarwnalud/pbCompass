@@ -1,5 +1,5 @@
 Evidências do que foi pedido na atvidade:
 
-https://github.com/catarwnalud/pbCompass/blob/b32a6d8c54e64838aff7a5cab26c675ccf7d13b0/sprint_1/evid%C3%AAncias/gitColab.png
+pbCompass/sprint_1/evidências/gitColab.png
 pbCompass/sprint_1/evidências/gitRepo.png
 pbCompass/sprint_1/evidências/gitRepo2.png
