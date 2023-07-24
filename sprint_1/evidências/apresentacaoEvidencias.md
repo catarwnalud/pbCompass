@@ -20,3 +20,4 @@
  - Distribuição do SO: [Ubuntu](https://github.com/catarwnalud/pbCompass/blob/85b874fbc4bcfb337a4a749cb2cb1ffbdcc5f9b9/sprint_1/evid%C3%AAncias/Captura%20de%20tela%202023-07-24%20181242.png)
 
 #
+
