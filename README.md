@@ -20,15 +20,15 @@
     
    - Quais as diferenças entre eles;
 
-   - Comandos básicos e avançados do Git
+   - Comandos básicos e avançados do Git;
 
-   - Gerenciar repositórios locais e também em servidores externos como no GitHub
+   - Gerenciar repositórios locais e também em servidores externos como no GitHub;
 
    - Versionamento de projetos;
 
    - Fluxo completo de controle de versão de um projeto (Code Review, Pull Request, Issues e etc.)
 
-   - Criar documentos com Markdown
+   - Criar documentos com Markdown;
 
    ## Linux
    
