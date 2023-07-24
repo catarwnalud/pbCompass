@@ -6,4 +6,4 @@
 
 ### Linux
 
-- [Certificado](#)
+- [Certificado](https://github.com/catarwnalud/pbCompass/blob/bb758e58a4452a680bb1c530af5ac14dc979e119/sprint_1/certificados/linux.jpg)
