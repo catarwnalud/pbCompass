@@ -1,6 +1,7 @@
-# pbCompass
+#
+# Programa de Bolsas - Compass Uol           
 
-### Programa de Bolsas - Compass Uol
+### pbCompass ![images-removebg-preview (1) (1) (2)](https://github.com/catarwnalud/pbCompass/assets/112534616/b449109c-3067-4acf-b922-c597c7bde9d2)
 
 👋 Catarina Freisleben
 
@@ -10,9 +11,11 @@
 
 🌐 Acesse meu [Portifólio](https://catarwnalud.github.io/) para me conhecer mais!
 
+#
+
   # Sprint 1
-  
-   ## Git e GitHub
+
+   ### Git e GitHub
    
    Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
   
