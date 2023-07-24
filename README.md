@@ -16,7 +16,7 @@
   # Sprint 1
 
    ### Git e GitHub
-   
+          
    Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
   
    - O que é Git e GitHub;
@@ -33,7 +33,9 @@
 
    - Criar documentos com Markdown;
 
-   ## Linux
+# 
+
+   ### Linux
    
    Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
    
