@@ -50,7 +50,6 @@
   - Editores de textos mais utilizados;
 
   - Gerenciamento de usuários e grupos;
-
   - Gerenciamento de permissões;
 
   - Gerenciamento básico de redes;
