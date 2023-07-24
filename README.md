@@ -11,12 +11,45 @@
 🌐 Acesse meu [Portifólio](https://catarwnalud.github.io/) para me conhecer mais!
 
   # Sprint 1
+  
+   ## Git e GitHub
+   
+   Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
+  
+   - O que é Git e GitHub;
+    
+   - Quais as diferenças entre eles;
 
- -  ### Git e GitHub
+   - Comandos básicos e avançados do Git
 
-    Do básico ao avançado. Conhecendo o que é, quais as diferenças, quais os comandos fundamentais, auxiliares e como administrar os repositórios.
+   - Gerenciar repositórios locais e também em servidores externos como no GitHub
 
- -  ### Linux
+   - Versionamento de projetos;
 
+   - Fluxo completo de controle de versão de um projeto (Code Review, Pull Request, Issues e etc.)
+
+   - Criar documentos com Markdown
+
+   ## Linux
+   
+   Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
+   
+   - Linux Fundamental (principais conceitos e comandos mais utilizados);
+
+  - Gerenciamento de diretórios e arquivos;
+
+  - Gerenciamento de pacotes/aplicativos (instalação, remoção, atualização e etc...);
+
+  - Buscar por arquivos/diretórios e dentro de arquivos;
+
+  - Editores de textos mais utilizados;
+
+  - Gerenciamento de usuários e grupos;
+
+  - Gerenciamento de permissões;
+
+  - Gerenciamento básico de redes;
+
+  - Compactação de arquivos e diretórios;
 
     
