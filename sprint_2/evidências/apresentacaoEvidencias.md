@@ -21,7 +21,7 @@
 
 * Desafio 2
 
-  - Minnhas queries do Projeto 2: [Desafio 2](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/desafio2.txt)
+  - Minhas queries do Projeto 2: [Desafio 2](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/desafio2.txt)
 
   - Gráfico 1: [Genêro dos clientes](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/g%C3%AAnero.png)
 
@@ -34,28 +34,6 @@
   - Gráfico 5: [Classificação dos veículos](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/estado%20do%20veiculo.png)
 
   - Gráfico 6: [Idade dos veículos](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/idade%20do%20ve%C3%ADculo.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  *Os gráficos foram feitos no Planilhas Google
 
