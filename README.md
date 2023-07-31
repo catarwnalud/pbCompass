@@ -13,9 +13,9 @@
 
 #
 
-  # Sprint 2
+  # Sprint 1
 
-   ### SQL para Análise de Dados
+   ### Git e GitHub
           
    Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
   
@@ -32,5 +32,51 @@
    - Fluxo completo de controle de versão de um projeto (Code Review, Pull Request, Issues e etc.)
 
    - Criar documentos com Markdown;
+
+# 
+
+   ### Linux
+   
+   Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
+   
+   - Linux Fundamental (principais conceitos e comandos mais utilizados);
+
+  - Gerenciamento de diretórios e arquivos;
+
+  - Gerenciamento de pacotes/aplicativos (instalação, remoção, atualização e etc...);
+
+  - Buscar por arquivos/diretórios e dentro de arquivos;
+
+  - Editores de textos mais utilizados;
+
+  - Gerenciamento de usuários e grupos;
+    
+  - Gerenciamento de permissões;
+
+  - Gerenciamento básico de redes;
+
+  - Compactação de arquivos e diretórios;
+
+#
+
+  # Sprint 2
+
+   ### SQL para Análise de Dados
+          
+   Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
+  
+   - ;
+    
+   - ;
+
+   - ;
+
+   - ;
+
+   - ;
+
+   - ;
+
+   - ;
 
 # 
