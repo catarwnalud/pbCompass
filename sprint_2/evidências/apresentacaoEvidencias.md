@@ -18,7 +18,7 @@
 - Gráfico 6: [Estados mais que mais venderam no mês](#)
 
 
- * Os gráficos feitos no Planilhas Google
+ *Os gráficos foram feitos no Planilhas Google
 
 #
 
