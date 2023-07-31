@@ -11,7 +11,7 @@
 
   - Gráfico 2: [Leads](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/leads.png)
 
-  - Gráfico 3: [Visitas ao site por mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/visitas%20ao%20site%20por%20dia%20da%20semana%20no%20m%C3%AAs.png)
+  - Gráfico 3: [Visitas ao site por dia da semana](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/visitas%20ao%20site%20por%20dia%20da%20semana%20no%20m%C3%AAs.png)
 
   - Gráfico 4: [Top 5 lojas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/top%205%20lojas%20que%20mais%20venderam.png)
 
