@@ -17,7 +17,7 @@
 
   - Gráfico 5: [Top 5 marcas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/top%205%20marcas%20mais%20vendidas%20no%20m%C3%AAs.png)
 
-  - Gráfico 6: [Estados mais que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/estados%20que%20mais%20venderam%20no%20m%C3%AAs.png)
+  - Gráfico 6: [Estados que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/estados%20que%20mais%20venderam%20no%20m%C3%AAs.png)
 
 * Desafio 2
 
@@ -27,13 +27,13 @@
 
   - Gráfico 2: [Status profissional](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/status%20profissional.png)
 
-  - Gráfico 3: [Faixa estária](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/faixa%20et%C3%A1ria.png)
+  - Gráfico 3: [Faixa etária](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/faixa%20et%C3%A1ria.png)
 
   - Gráfico 4: [Faixa salarial](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/faixa%20salarial.png)
 
   - Gráfico 5: [Classificação dos veículos](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/estado%20do%20veiculo.png)
 
-  - Gráfico 6: [Anos dos veículos](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/idade%20do%20ve%C3%ADculo.png)
+  - Gráfico 6: [Idade dos veículos](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/idade%20do%20ve%C3%ADculo.png)
 
 
 
