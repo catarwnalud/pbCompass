@@ -62,21 +62,19 @@
   # Sprint 2
 
    ### SQL para Análise de Dados
-          
-   Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
-  
-   - ;
+
+  - Sintaxe básica do SQL;
     
-   - ;
+  - Filtragem de dados com WHERE;
 
-   - ;
+  - Análise de dados agregados com GROUP BY;
 
-   - ;
+  - Relacionamento entre tabelas utilizando JOIN;
 
-   - ;
+  - Queries avançadas com o uso de Subqueries;
 
-   - ;
+  - Limpeza e tratamento de dados;
 
-   - ;
+  - Como criar e manipular tabelas.
 
 # 
