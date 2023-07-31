@@ -13,9 +13,9 @@
 
 #
 
-  # Sprint 1
+  # Sprint 2
 
-   ### Git e GitHub
+   ### SQL para Análise de Dados
           
    Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
   
@@ -34,31 +34,3 @@
    - Criar documentos com Markdown;
 
 # 
-
-   ### Linux
-   
-   Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
-   
-   - Linux Fundamental (principais conceitos e comandos mais utilizados);
-
-  - Gerenciamento de diretórios e arquivos;
-
-  - Gerenciamento de pacotes/aplicativos (instalação, remoção, atualização e etc...);
-
-  - Buscar por arquivos/diretórios e dentro de arquivos;
-
-  - Editores de textos mais utilizados;
-
-  - Gerenciamento de usuários e grupos;
-
-  - Gerenciamento de permissões;
-
-  - Gerenciamento básico de redes;
-
-  - Compactação de arquivos e diretórios;
-
-#
-
-# Sprint 2
-
-    
