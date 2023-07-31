@@ -15,45 +15,19 @@
   # Sprint 2
 
    ### SQL para Análise de Dados
-          
-   Do básico ao avançado e técnicas para gerenciar e administrar os seus repositórios.
-  
-   - O que é Git e GitHub;
+      
+   - Sintaxe básica do SQL;
     
-   - Quais as diferenças entre eles;
+   - Filtragem de dados com WHERE;
 
-   - Comandos básicos e avançados do Git;
+   - Análise de dados agregados com GROUP BY;
 
-   - Gerenciar repositórios locais e também em servidores externos como no GitHub;
+   - Relacionamento entre tabelas utilizando JOIN;
 
-   - Versionamento de projetos;
+   - Queries avançadas com o uso de Subqueries;
 
-   - Fluxo completo de controle de versão de um projeto (Code Review, Pull Request, Issues e etc.)
+   - Limpeza e tratamento de dados;
 
-   - Criar documentos com Markdown;
+   - Como criar e manipular tabelas.
 
 # 
-
-   ### Linux
-   
-   Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
-   
-   - Linux Fundamental (principais conceitos e comandos mais utilizados);
-
-  - Gerenciamento de diretórios e arquivos;
-
-  - Gerenciamento de pacotes/aplicativos (instalação, remoção, atualização e etc...);
-
-  - Buscar por arquivos/diretórios e dentro de arquivos;
-
-  - Editores de textos mais utilizados;
-
-  - Gerenciamento de usuários e grupos;
-    
-  - Gerenciamento de permissões;
-
-  - Gerenciamento básico de redes;
-
-  - Compactação de arquivos e diretórios;
-
-#
