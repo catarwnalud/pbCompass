@@ -1,0 +1,151 @@
+Queries do Projeto 1
+
+-- (Query 1) Receita, leads, conversão e ticket médio mês a mês
+-- Colunas: mês, leads (#), vendas (#), receita (k, R$), conversão (%), ticket médio (k, R$)
+
+
+with 
+	acessos as (
+		select 
+			date_trunc('month', visit_page_date)::date as mes,
+			count (date_trunc('month', visit_page_date)::date) as leads_mes
+		from sales.funnel 
+		group by mes
+		order by mes 
+	), 
+	
+	vendas as (
+		select 
+			date_trunc('month', paid_date)::date as mes,
+			count (date_trunc('month', paid_date)::date) as vendas_mes,
+			sum(tP.price * (1 + tF.discount) ) as receita_mes
+		from sales.funnel as tF
+		left join sales.products tP
+			on tF.product_id = tP.product_id
+		where tF.paid_date is not null
+		group by mes
+		order by mes
+	) 
+	
+select
+	acessos.mes as "mês",
+	acessos.leads_mes as "leads (#)",
+	vendas.vendas_mes as "vendas (#)",
+	(vendas.receita_mes/1000) as "receita (k, R$)",
+	(vendas.vendas_mes::float / acessos.leads_mes::float) as "conversão (%)",
+	(vendas.receita_mes / vendas.vendas_mes / 1000) as "ticket médio (k,R$)"
+from acessos
+left join vendas
+	on acessos.mes = vendas.mes
+
+
+-- acessos por mês
+
+select 
+	date_trunc('month', visit_page_date)::date as mes,
+	count (date_trunc('month', visit_page_date)::date) as leads_mes
+
+from sales.funnel 
+group by mes
+order by mes 
+
+
+-- número de vendas por mêS
+
+select 
+	date_trunc('month', paid_date)::date as mes,
+	count (date_trunc('month', paid_date)::date) as vendas
+	
+from sales.funnel
+group by mes
+order by mes 
+
+
+-- receita por mês 
+
+select 
+	date_trunc('month', paid_date)::date as mes,
+	sum( tP.price * (1 + tF.discount) ) as receita
+	
+from sales.funnel as tF
+left join sales.products tP
+	on tF.product_id = tP.product_id
+where tF.paid_date is not null
+group by mes
+order by mes 
+
+
+-- (Query 2) Estados que mais venderam
+-- Colunas: país, estado, vendas (#)
+
+select
+	'Brasil' as país,
+	tC.state as "estado",
+	count (tC.state) as "vendas (#)"
+from sales.funnel as tF
+left join sales.customers as tC
+	on tF.customer_id = tC.customer_id
+where tF.paid_date is not null
+	and paid_date between '2021-08-01' and '2021-08-31'
+group by state
+order by "vendas (#)" desc
+limit 5
+
+
+
+-- (Query 3) Marcas que mais venderam no mês
+-- Colunas: marca, vendas (#)
+
+
+select 
+	tP.brand as "marca",
+	count (tF.paid_date) as "vendas (#)"
+from sales.funnel as tF
+left join sales.products as tP
+	on tF.product_id = tP.product_id
+where tF.paid_date is not null
+	and paid_date between '2021-08-01' and '2021-08-31'
+group by marca
+order by "vendas (#)" desc
+limit 5
+
+
+
+-- (Query 4) Lojas que mais venderam
+-- Colunas: loja, vendas (#)
+
+select
+	tS.store_name as "loja",
+	count (tF.paid_date) as "vendas (#)"
+from sales.funnel as tF
+left join sales.stores as tS
+	on tF.store_id = tS.store_id
+where tF.paid_date is not null
+	and paid_date between '2021-08-01' and '2021-08-31'
+group by loja
+order by "vendas (#)" desc
+limit 5
+
+
+
+-- (Query 5) Dias da semana com maior número de visitas ao site
+-- Colunas: dia_semana, dia da semana, vis
+
+
+select 
+	extract(dow from tF.visit_page_date) as dia_semana,
+	case
+		when extract(dow from visit_page_date) = 0 then 'Domingo'
+		when extract(dow from visit_page_date) = 1 then 'Segunda'
+		when extract(dow from visit_page_date) = 2 then 'Terça'
+		when extract(dow from visit_page_date) = 3 then 'Quarta'
+		when extract(dow from visit_page_date) = 4 then 'Quinta'
+		when extract(dow from visit_page_date) = 5 then 'Sexta'
+		when extract(dow from visit_page_date) = 6 then 'Sábado'
+		end as "dia da semana",
+	count (visit_page_date) as "vis"
+
+from sales.funnel as tF
+where tF.visit_page_date between '2021-08-01' and '2021-08-31'
+group by dia_semana
+order by dia_semana
