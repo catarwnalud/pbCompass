@@ -80,27 +80,3 @@
    - ;
 
 # 
-
-   ### Linux
-   
-   Utilizacação do terminal do Sistema Operacional Linux na distribuição de Ubuntu. 
-   
-   - Linux Fundamental (principais conceitos e comandos mais utilizados);
-
-  - Gerenciamento de diretórios e arquivos;
-
-  - Gerenciamento de pacotes/aplicativos (instalação, remoção, atualização e etc...);
-
-  - Buscar por arquivos/diretórios e dentro de arquivos;
-
-  - Editores de textos mais utilizados;
-
-  - Gerenciamento de usuários e grupos;
-    
-  - Gerenciamento de permissões;
-
-  - Gerenciamento básico de redes;
-
-  - Compactação de arquivos e diretórios;
-
-#
