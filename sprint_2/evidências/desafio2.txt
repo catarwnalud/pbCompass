@@ -1,3 +1,7 @@
+-------------------------------------------------------------------------------------
+Queries do Projeto 2
+-------------------------------------------------------------------------------------
+
 -- (Query 1) Gênero dos leads
 -- Colunas: gênero, leads(#)
 
@@ -8,6 +12,8 @@ from sales.customers as tC
 left join temp_tables.ibge_genders as tG
 	on lower (tC.first_name) = tG.first_name
 group by gênero
+
+-------------------------------------------------------------------------------------
 
 -- (Query 2) Status profissional dos leads
 -- Colunas: status profissional, leads (%)
@@ -21,6 +27,7 @@ left join sales.funnel as tF
 group by "status profissonal"
 order by "leads (%)" 
 
+-------------------------------------------------------------------------------------
 
 -- (Query 3) Faixa etária dos leads
 -- Colunas: faixa etária, leads (%)
@@ -38,10 +45,10 @@ from sales.customers
 group by "faixa etária"
 order by "faixa etária" desc
 
+-------------------------------------------------------------------------------------
 
 -- (Query 4) Faixa salarial dos leads
 -- Colunas: faixa salarial, leads (%), ordem
-
 
 select 
 	case
@@ -64,12 +71,11 @@ from sales.customers
 group by "faixa salarial", ordem
 order by ordem desc
 
-
+-------------------------------------------------------------------------------------
 
 -- (Query 5) Classificação dos veículos visitados
 -- Colunas: classificação do veículo, veículos visitados (#)
 -- Regra de negócio: Veículos novos tem até 2 anos e seminovos acima de 2 anos
-
 
 select 
 	case 
@@ -83,8 +89,7 @@ left join sales.products as tP
 group by "classificação do veículo"
 order by "classificação do veículo"
 
-
-
+-------------------------------------------------------------------------------------
 
 -- (Query 6) Idade dos veículos visitados
 -- Colunas: Idade do veículo, veículos visitados (%), ordem
@@ -112,6 +117,8 @@ left join sales.products as tP
 	on tF.product_id = tP.product_id
 group by "Idade do veículo", ordem
 order by ordem
+
+-------------------------------------------------------------------------------------
 
 -- (Query 7) Veículos mais visitados por marca
 -- Colunas: brand, model, visitas (#)
