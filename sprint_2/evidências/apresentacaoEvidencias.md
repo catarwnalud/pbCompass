@@ -3,7 +3,7 @@
 
 ### SQL para Análise de Dados
 
-Projetos propostos no curso de SQL
+*Projetos propostos durante o curso de SQL da Sprint 2*
 
 * Desafio 1
 
