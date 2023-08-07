@@ -35,7 +35,7 @@
 
 * Desafio 2
 
-  - Projeto 2: [Queries](https://github.com/catarwnalud/pbCompass/blob/fe7c6c6ec7af13547a2c824df3f4de73436ef5eb/sprint_2/evid%C3%AAncias/desafio2.txt)
+  - Projeto 2: [Queries](https://github.com/catarwnalud/pbCompass/blob/8483d39a2e8d381a1e417eb2ffce769fdda6931a/sprint_2/evid%C3%AAncias/desafio2.txt)
 
   - Gráfico 1: 
   
