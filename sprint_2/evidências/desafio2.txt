@@ -133,3 +133,4 @@ left join sales.products as tP
 		on tF.product_id = tP.product_id
 group by tP.brand,tP.model
 order by tP.brand, tP.model, "visitas(#)" desc
+
