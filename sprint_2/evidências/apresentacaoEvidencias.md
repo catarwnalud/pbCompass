@@ -11,7 +11,7 @@
 
   - Gráfico 1: 
   
-  ![Receita](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/receita.png)
+  ![Receita](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/receitaMes.png)
 
   - Gráfico 2: 
   
@@ -19,19 +19,19 @@
 
   - Gráfico 3: 
   
-  ![Visitas ao site por dia da semana](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/visitas%20ao%20site%20por%20dia%20da%20semana%20no%20m%C3%AAs.png)
+  ![Visitas ao site por dia da semana](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/visitasSite.png)
 
   - Gráfico 4:
   
-  ![Top 5 lojas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/top%205%20lojas%20que%20mais%20venderam.png)
+  ![Top 5 lojas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/lojasMaisVenderam.png)
 
   - Gráfico 5: 
   
-  ![Top 5 marcas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/top%205%20marcas%20mais%20vendidas%20no%20m%C3%AAs.png)
+  ![Top 5 marcas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/marcasMaisVendidas.png)
 
   - Gráfico 6: 
   
-  ![Estados que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/estados%20que%20mais%20venderam%20no%20m%C3%AAs.png)
+  ![Estados que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/estadosMaisVenderam.png)
 
 * Desafio 2
 
@@ -39,27 +39,27 @@
 
   - Gráfico 1: 
   
-  ![Gênero dos clientes](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/g%C3%AAnero.png)
+  ![Gênero dos clientes](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/genero.png)
 
   - Gráfico 2: 
   
-  ![Status profissional](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/status%20profissional.png)
+  ![Status profissional](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/statusProfissional.png)
 
   - Gráfico 3: 
   
-  ![Faixa etária](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/faixa%20et%C3%A1ria.png)
+  ![Faixa etária](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/faixaEtaria.png)
 
   - Gráfico 4: 
   
-  ![Faixa salarial](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/faixa%20salarial.png)
+  ![Faixa salarial](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/faixaSalarial.png)
 
   - Gráfico 5: 
   
-  ![Classificação dos veículos](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/estado%20do%20veiculo.png)
+  ![Classificação dos veículos](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/estadoVeiculo.png)
 
   - Gráfico 6: 
   
-  ![Idade dos veículos](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/idade%20do%20ve%C3%ADculo.png)
+  ![Idade dos veículos](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/evid%C3%AAncias/idadeVeiculo.png)
 
  *Os gráficos foram feitos no Planilhas Google
 
