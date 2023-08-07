@@ -34,6 +34,58 @@
 
   ### Big Data
 
+  - O que é Big Data?;
+
+      - Os 4V's do Big Data;
+        
+      - Big Data x Ciência de Dados;
+    
+  - Sistemas de Armazenamento de Dados;
+
+      - Banco de Dados Relacionais X Banco de Dados NoSQL;
+        
+      - Data WareHouses, Data Lakes e Data Stores;
+   
+      - Sistemas Híbridos de Armazenamento;
+   
+  - Armazenamento e Processamento Paralelo;
+
+      - Cluster de computadores;
+   
+      - Armazenamento Paralelo e Software;
+   
+      - Processamento Paralelo de Big Data;
+
+  - Cloud Computing;
+
+  - MLOps e DaraOps;
+
+       - O que é Machine Learning?
+   
+       - Pipeline de ML;
+   
+       - DevOps, MLOps, AIOps e DataOps;
+   
+       - Big Data X Small Data;
+
+  - Dados como Serviço;
+    
+      - Data as a Service (DaaS);
+   
+      - Arquitetura DaaS;
+   
+      - Data Mesh;
+
+  - ETL - Extração, Transformação e Carga de Dados;
+     
+      - O que é ETL?;
+   
+      - ETL X ELT;
+
+  - Big Data Analytics;
+
+  - Definição de Business Case.
+
 # 
 
 
