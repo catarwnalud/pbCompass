@@ -1,0 +1,57 @@
+--------------------------------
+Seção 6: Linguaguem SQL - Exercícios ||
+--------------------------------
+
+1.
+
+Exportar o resultado da query que obtém os 10 livros mais caros para um arquivo CSV. Utilizar o caractere ; (ponto e vírgula) como separador. Lembre-se que o conteúdo do seu arquivo deverá respeitar a sequência de colunas e seus respectivos nomes de cabeçalho que listamos abaixo:
+
+CodLivro
+Titulo
+CodAutor
+NomeAutor
+Valor
+CodEditora
+NomeEditora
+
+
+SELECT
+	cod as "CodLivro",
+    titulo as "Titulo",
+    autor.codautor as "CodAutor",
+    autor.nome as "NomeAutor",
+    valor as "Valor",
+    editora.codeditora as "CodEditora",
+    editora.nome as "NomeEditora"
+FROM livro
+left join autor
+	on livro.autor = autor.codautor
+	left join editora
+    on livro.editora = editora.codeditora
+GROUP by CodLivro, Titulo, CodAutor, NomeAutor, CodEditora, NomeEditora
+order by valor DESC
+limit 10
+
+--------------------------------
+
+2.
+
+Exportar o resultado da query que obtém as 5 editoras com maior quantidade de livros na biblioteca para um arquivo CSV. Utilizar o caractere | (pipe) como separador. Lembre-se que o conteúdo do seu arquivo deverá respeitar a sequência de colunas e seus respectivos nomes de cabeçalho que listamos abaixo:
+
+CodEditora
+NomeEditora
+QuantidadeLivros
+
+
+SELECT
+    editora.codeditora as "CodEditora",
+    editora.nome as "NomeEditora",
+    count (*) as "QuantidadeLivros"
+from editora
+left join livro
+	ON editora.codeditora = livro.editora
+GROUP by editora.codeditora, editora.nome
+ORDER by QuantidadeLivros desc
+limit 5
+
+--------------------------------
