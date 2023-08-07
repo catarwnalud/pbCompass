@@ -7,7 +7,7 @@
 
 * Desafio 1
 
-  - Projeto 1: [Queries](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/desafio1.txt)
+  - Projeto 1: [Queries](https://github.com/catarwnalud/pbCompass/blob/71eef1fc3dae59299e671cbffae6617b98dda026/sprint_2/evid%C3%AAncias/desafio1.txt)
 
   - Gráfico 1: 
   
@@ -35,7 +35,7 @@
 
 * Desafio 2
 
-  - Projeto 2: [Queries](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/desafio2.txt)
+  - Projeto 2: [Queries](https://github.com/catarwnalud/pbCompass/blob/71eef1fc3dae59299e671cbffae6617b98dda026/sprint_2/evid%C3%AAncias/desafio2.txt)
 
   - Gráfico 1: 
   
