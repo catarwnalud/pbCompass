@@ -67,7 +67,7 @@
 
 ### Big Data
 
-*Quiz proposto durante o curso*
+*Quiz proposto durante o curso de Big Data da Sprint 2*
 
   - Questão 1: 
   
