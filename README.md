@@ -12,7 +12,6 @@
 🌐 Acesse meu [Portifólio](https://catarwnalud.github.io/) para me conhecer mais!
 
 #
-
   # Sprint 1
 
    ### Git e GitHub
@@ -80,3 +79,33 @@
 #
 
   ### Big Data
+
+  - O que é Big Data?;
+
+  - Sistemas de Armazenamento de Dados;
+
+  - Armazenamento e Processamento Paralelo;
+    
+  - Cloud Computing;
+
+  - MLOps e DaraOps;
+    
+  - Dados como Serviço;
+    
+  - ETL - Extração, Transformação e Carga de Dados;
+     
+  - Big Data Analytics;
+
+  - Definição de Business Case.
+    
+#
+
+  # Sprint 3
+
+
+
+
+
+
+
+
