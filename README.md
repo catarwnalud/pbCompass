@@ -61,7 +61,7 @@
 
   # Sprint 2
 
-   ### SQL para Análise de Dados
+  ### SQL para Análise de Dados
 
   - Sintaxe básica do SQL;
     
@@ -77,4 +77,6 @@
 
   - Como criar e manipular tabelas.
 
-# 
+#
+
+  ### Big Data
