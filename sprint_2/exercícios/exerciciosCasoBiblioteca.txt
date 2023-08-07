@@ -137,15 +137,4 @@ LEFT join livro
 WHERE autor.codautor is not livro.autor
 GROUP by autor.nome
 
-
-
-
-
-
-
-
-
-
-
-
-
+--------------------------------
