@@ -45,14 +45,14 @@
 
 *Quiz proposto durante o curso*
 
-  - Questão 1: [](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD1.png)
+  - Questão 1: ![](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD1.png)
 
-  - Questão 2: [](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD2.png)
+  - Questão 2: ![](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD2.png)
 
-  - Questão 3: [](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD3.png)
+  - Questão 3: ![](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD3.png)
 
-  - Questão 4: [](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD4.png)
+  - Questão 4: ![](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD4.png)
 
-  - Questão 5: [](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD5.png)
+  - Questão 5: ![](https://github.com/catarwnalud/pbCompass/blob/fff59a4869c0f3d6a1c2a6f926d72781bcb433ff/sprint_2/evid%C3%AAncias/questaoBD5.png)
 
 #
