@@ -1,4 +1,155 @@
 
+
+-------------------------------------------------------------------
+Seção 3: Linguagem SQL - Exercícios - Caso de Estudo "Biblioteca"
+-------------------------------------------------------------------
+
+E1
+
+Apresente a query para listar todos os livros publicados após 2014. Ordenar pela coluna cod, em ordem crescente, as linhas.  Atenção às colunas esperadas no resultado final: cod, titulo, autor, editora, valor, publicacao, edicao, idioma
+
+SELECT
+	cod,
+    titulo,
+    autor,
+    editora,
+    valor,
+    publicacao,
+    edicao,
+    idioma
+FROM livro
+where publicacao > '2014-12-31'
+order by cod asc
+
+
+![]()
+
+--------------------------------
+
+E2
+
+Apresente a query para listar os 10 livros mais caros. Ordenar as linhas pela coluna valor, em ordem decrescente.  Atenção às colunas esperadas no resultado final:  titulo, valor.
+
+SELECT 
+	titulo,
+    valor
+FROM livro
+order by valor desc
+limit 10
+
+--------------------------------
+
+E3
+
+Apresente a query para listar as 5 editoras com mais livros na biblioteca. O resultado deve conter apenas as colunas quantidade, nome, estado e cidade. Ordenar as linhas pela coluna que representa a quantidade de livros em ordem decrescente.
+
+
+SELECT
+	count (*) as "quantidade",
+    editora.nome,
+    endereco.estado,
+    endereco.cidade
+from livro
+left join editora
+	ON livro.editora = editora.codeditora
+    left join endereco
+    	on  endereco.codendereco = editora.endereco
+  GROUP by editora.nome
+  ORDER by quantidade desc
+  limit 5
+
+--------------------------------
+
+E4
+
+Apresente a query para listar a quantidade de livros publicada por cada autor. Ordenar as linhas pela coluna nome (autor), em ordem crescente. Além desta, apresentar as colunas codautor, nascimento e quantidade (total de livros de sua autoria).
+
+
+SELECT
+	autor.nome,
+	autor.codautor,
+    autor.nascimento,
+    count (DISTINCT livro.titulo) as "quantidade"
+from autor
+left join livro
+	on livro.autor = autor.codautor
+ GROUP by autor.nome
+ ORDER by autor.nome asc
+
+--------------------------------
+
+E5
+
+Apresente a query para listar o nome dos autores que publicaram livros através de editoras NÃO situadas na região sul do Brasil. Ordene o resultado pela coluna nome, em ordem crescente. Não podem haver nomes repetidos em seu retorno.
+
+with edi as (
+  SELECT
+  	editora.codeditora as "edi_cod",
+ 	endereco.estado
+  from endereco
+  left join editora
+      on endereco.codendereco = editora.endereco
+  where endereco.estado <> 'RIO GRANDE DO SUL'
+      AND endereco.estado <> 'PARANÁ'
+      AND endereco.estado <> 'SANTA  CATARINA'
+),
+
+aut as (
+  SELECT
+    autor.nome as "nome",
+    livro.editora as "aut_cod"
+  from autor
+  left join livro
+    on autor.codautor = livro.autor
+)
+  
+ SELECT
+ 	aut.nome
+ from aut
+ left join edi 
+ 	on aut.aut_cod = edi.edi_cod
+where edi.estado is not null
+GROUP by aut.nome
+ORDER by aut.nome
+
+--------------------------------
+
+E6
+
+Apresente a query para listar o autor com maior número de livros publicados. O resultado deve conter apenas as colunas codautor, nome, quantidade_publicacoes.
+
+select 
+	autor.codautor,
+    autor.nome,
+    count (*) as "quantidade_publicacoes"
+from livro 
+left join autor
+	on livro.autor = autor.codautor
+GROUP by autor.nome
+ORDER by quantidade_publicacoes DESC
+limit 1
+
+--------------------------------
+
+E6
+
+Apresente a query para listar o nome dos autores com nenhuma publicação. Apresentá-los em ordem crescente.
+
+SELECT
+	autor.nome
+from autor
+LEFT join livro
+	on autor.codautor = livro.autor
+WHERE autor.codautor is not livro.autor
+GROUP by autor.nome
+
+
+
+
+
+
+
+
 ------------------------------------------------
 
 Exportar o resultado da query que obtém os 10 livros mais caros para um arquivo CSV. Utilizar o caractere ; (ponto e vírgula) como separador. Lembre-se que o conteúdo do seu arquivo deverá respeitar a sequência de colunas e seus respectivos nomes de cabeçalho que listamos abaixo:
