@@ -23,7 +23,7 @@
 
   - Gráfico 4:
   
-  ! [Top 5 lojas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/top%205%20lojas%20que%20mais%20venderam.png)
+  ![Top 5 lojas que mais venderam no mês](https://github.com/catarwnalud/pbCompass/blob/d2cc18f3b77c1f2e7c6adc50d825462727bb9abe/sprint_2/evid%C3%AAncias/top%205%20lojas%20que%20mais%20venderam.png)
 
   - Gráfico 5: 
   
