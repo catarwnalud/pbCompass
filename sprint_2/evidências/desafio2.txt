@@ -134,3 +134,4 @@ left join sales.products as tP
 group by tP.brand,tP.model
 order by tP.brand, tP.model, "visitas(#)" desc
 
+-------------------------------------------------------------------------------------
