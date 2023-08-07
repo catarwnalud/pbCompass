@@ -13,6 +13,6 @@
 
 - Certificado:
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_2/certifcados/bigData.png)
 
 #
