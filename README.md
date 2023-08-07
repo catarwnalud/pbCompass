@@ -102,7 +102,7 @@
 
   # Sprint 3
 
-   *Em andamento*
+  - *Em andamento*
 
 #
 
