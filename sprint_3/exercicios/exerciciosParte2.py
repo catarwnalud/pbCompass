@@ -177,6 +177,58 @@ func(1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
+"""
+E15 - Implemente a classe Lampada. A classe Lâmpada recebe um booleano no seu construtor,
+      True se a lâmpada estiver ligada, False caso esteja desligada. A classe Lampada possuí os seguintes métodos:
+      
+      liga(): muda o estado da lâmpada para ligada
+      
+      desliga(): muda o estado da lâmpada para desligada
+      
+      esta_ligada(): retorna verdadeiro se a lâmpada estiver ligada, falso caso contrário
+      
+      Para testar sua classe:
+      
+      Ligue a Lampada
+      
+      Imprima: A lâmpada está ligada? True
+      
+      Desligue a Lampada
+      
+      Imprima: A lâmpada ainda está ligada? False
+"""
+
+class Lampada:
+    
+    ligada = ''
+
+    def __init__ (self, bool):
+
+        if bool == True:
+            self.ligada = True
+            
+        else:
+            self.ligada = False
+
+    def liga(self):
+        self.ligada = True
+
+    def desliga(self):
+        self.ligada = False
+    
+    def esta_ligada(self):
+        if self.ligada == True:
+            return True
+        else:
+            return False
+    
+a = Lampada(True)
+
+a.liga()
+print("A lâmpada esta ligada? {}".format(a.esta_ligada()))
+a.desliga()
+print("A lâmpada esta ligada? {}".format(a.esta_ligada()))
+
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
 """
