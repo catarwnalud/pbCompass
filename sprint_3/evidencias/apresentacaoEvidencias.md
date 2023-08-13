@@ -65,7 +65,7 @@
 
   - Exercício 14: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e14parte2.png)
   
   - Exercício 15: 
   
