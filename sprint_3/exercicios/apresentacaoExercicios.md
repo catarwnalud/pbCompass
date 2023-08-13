@@ -3,7 +3,7 @@
 
 ### Seção 3: Exercícios Python | - 1/2
 
-- [NAOSEI](#) 
+- ![Exercício 1 ](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/py1e1parte1.py) 
 
 #
 
