@@ -69,7 +69,7 @@
   
   - Exercício 15: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e15parte2.png)
   
   - Exercício 16: 
   
