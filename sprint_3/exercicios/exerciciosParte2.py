@@ -154,6 +154,27 @@ print("{}".format(list(map(my_map,lista))))
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
+"""
+E14 - Escreva uma função que recebe um número variável de parâmetros não nomeados e um número variado de parâmetros nomeados 
+      e imprime o valor de cada parâmetro recebido.
+      
+      Teste sua função com os seguintes parâmetros:
+      
+      (1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
+"""
+
+def func (*parm, **args):
+
+      for i in parm:
+            print(i)
+
+      for i in args.values():
+            print (i)
+            
+      return 0
+
+func(1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
+
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
