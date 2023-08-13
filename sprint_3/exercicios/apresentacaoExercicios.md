@@ -3,7 +3,7 @@
 
 ### Seção 3: Exercícios Python | - 1/2
 
-- ![Exercício da seção 3](#) 
+- ![Exercício da Seção 3](#) 
 
 #
 
