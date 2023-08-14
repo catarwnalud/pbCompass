@@ -13,7 +13,7 @@
 
   - Exercício 2: 
   
-  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e10parte2.png)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e2parte1.png)
 
   - Exercício 3: 
   
@@ -77,7 +77,7 @@
 
    - Exercício 17: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e17parte2.png)
 
    - Exercício 18: 
   
