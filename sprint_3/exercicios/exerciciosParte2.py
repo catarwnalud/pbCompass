@@ -308,6 +308,50 @@ print(lista)
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
+"""
+E19 - Calcule o valor mínimo, valor máximo, valor médio e a mediana da lista gerada na célula abaixo:
+      
+      import random 
+      # amostra aleatoriamente 50 números do intervalo 0...500
+      random_list = random.sample(range(500),50)
+      
+      Use as variáveis abaixo para representar cada operação matemática
+      
+      mediana
+      media
+      valor_minimo 
+      valor_maximo 
+
+      Obs.: Lembrem-se, para calcular a mediana a lista deve estar ordenada!
+"""
+
+import random
+
+def media_lista(lista):
+    soma = sum(lista)
+    return soma/len(lista)
+
+def mediana_lista (lista):
+    
+    lista = sorted(lista)
+    lista_central = []
+
+    if len(lista) % 2 == 0:
+        lista_central.append(lista[24])
+        lista_central.append(lista[25])
+        return media_lista(lista_central)
+    else:
+        return lista[25]
+
+random_list = random.sample(range(500), 50)
+
+media = media_lista(random_list)
+valor_minimo = min(random_list)
+valor_maximo = max(random_list)
+mediana = mediana_lista(random_list)
+
+print("Media: {}, Mediana: {}, Mínimo: {}, Máximo: {}".format(media, mediana, valor_minimo,valor_maximo))
+
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
 """
