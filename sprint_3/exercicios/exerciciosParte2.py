@@ -254,6 +254,39 @@ print("{}".format(soma(string)))
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
+"""
+E17 - Escreva uma função que recebe como parâmetro uma lista e retorna 3 listas: a lista recebida dividida em 3 partes iguais. 
+      Teste sua implementação com a lista abaixo
+      
+      lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+"""
+
+def triplo(lista):
+
+    elementos = int(len(lista)/3)
+
+    lista1=[]
+    lista2=[]
+    lista3=[]
+
+    for i in range(0, lista[elementos-1]):
+        lista1.append(lista[i])
+    
+    for j in range(lista[elementos-1], lista[elementos+elementos-1]):
+        lista2.append(lista[j])
+
+    for k in range(lista[elementos+elementos-1], lista[elementos+elementos+elementos-1]):
+        lista3.append(lista[k])
+
+    return lista1, lista2, lista3
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+lista1,lista2,lista3 = triplo(lista)
+
+print("{} {} {}".format(lista1, lista2, lista3))
+
+
 #--------------------------------------------------------------------------------------------------------------------------------------#
 
 """
