@@ -89,6 +89,6 @@
   
   - Exercício 20: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e20parte2.png)
 
 #
