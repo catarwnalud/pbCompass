@@ -5,7 +5,9 @@
 
 *Exercícios propostos*
 
+#
 * Seção 3: Exercícios Python | - 1/2
+#
 
   - Exercício 1: 
   
@@ -28,9 +30,8 @@
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e5parte1.png)
 
 # 
-
 * Seção 4: Exercícios Python | - 2/2
-
+#
   - Exercício 6: 
   
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e6parte2.png)
