@@ -39,6 +39,7 @@ class Pato(Passaro):
     def som(self, som):
         Passaro.som(self, som)
 
+
 class Pardal(Passaro):
 
     def __init__(self, especie):
