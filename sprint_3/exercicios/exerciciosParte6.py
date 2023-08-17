@@ -92,3 +92,33 @@ p = Pessoa(0)
 p.nome = ("Fulano de Tal")
 print(p.nome)
     
+#--------------------------------------------------------------------------------------------------------------------------------------#
+
+"""
+E23 - Crie uma classe  Calculo  que contenha um método que aceita dois parâmetros, X e Y, e retorne a soma dos dois. 
+      Nessa mesma classe, implemente um método de subtração, que aceita dois parâmetros, X e Y, e retorne a subtração dos dois 
+      (resultados negativos são permitidos).
+
+      Utilize os valores abaixo para testar seu exercício:
+
+      x = 4 
+      y = 5
+      imprima:
+
+      Somando: 4+5 = 9
+      Subtraindo: 4-5 = -1
+"""
+
+class Calculo:
+
+    def soma(x, y):
+        soma = x+y
+        print("Somando: {}+{} = {}".format(x, y, soma))
+    
+    def sub (x, y):
+        sub = x-y
+        print("Subtraindo: {}-{} = {}".format(x, y, sub))
+    
+Calculo.soma(4, 5)
+Calculo.sub(4, 5)
+
