@@ -92,4 +92,28 @@
   
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py1e20parte2.png)
 
+# 
+* Seção 6: Exercícios Python || - 1/2
 #
+  - Exercício 21: 
+  
+  ![](#)
+
+  - Exercício 22: 
+  
+  ![](#)
+  
+  - Exercício 23: 
+  
+  ![](#)
+  
+  - Exercício 24:
+
+  ![](#)
+  
+  - Exercício 25: 
+  
+  ![](#)
+
+
+
