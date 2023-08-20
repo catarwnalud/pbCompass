@@ -16,18 +16,22 @@
 
    ### Python
       
-   - ;
+   - Tpos básicos (números, strings, listas, set, tuplas, match-case e dicionários);
     
-   - ;
+   - Operadores aritméticos, relacionais, lógicos, e membros/identidade;
 
-   - ;
+   - Builtins;
 
-   - ;
+   - Interpolação;
 
-   - ;
+   - Estruturas de controle (if, else, while, for);
 
-   - ;
+   - Manipulação de arquivos (leitura e escrita);
 
-   - .
+   - Funções e tipos de parâmetros;
+
+   - Decorator;
+
+   - Programação orientada a objetos.
      
 #   
