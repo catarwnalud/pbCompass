@@ -115,5 +115,27 @@
   
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e25parte1.png)
 
+# 
+* Seção 7: Exercícios Python || - 2/2
+#
+  - Exercício 1: 
+  
+  ![]()
 
+  - Exercício 2: 
+  
+  ![]()
 
+  - Exercício 3: 
+  
+  ![]()
+
+  - Exercício 4: 
+  
+  ![]()
+
+  - Exercício 5: 
+  
+  ![]()
+
+#
