@@ -97,23 +97,23 @@
 #
   - Exercício 21: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e21parte1.png)
 
   - Exercício 22: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e22parte1.png)
   
   - Exercício 23: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e23parte1.png)
   
   - Exercício 24:
 
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e24parte1.png)
   
   - Exercício 25: 
   
-  ![](#)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/py2e25parte1.png)
 
 
 
