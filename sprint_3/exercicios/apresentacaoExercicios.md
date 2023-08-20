@@ -15,6 +15,6 @@
 
 ### Seção 6: Exercícios Python || - 1/2
 
-- [Exercícios da Seção 6](#) 
+- [Exercícios da Seção 6](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/exerciciosParte6.py) 
 
 #
