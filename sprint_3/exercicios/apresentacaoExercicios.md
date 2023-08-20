@@ -18,3 +18,9 @@
 - [Exercícios da Seção 6](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/exerciciosParte6.py) 
 
 #
+
+### Seção 7: Exercícios Python || - 2/2
+
+- [Exercícios da Seção 7](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/desafioParte7.py) 
+
+#
