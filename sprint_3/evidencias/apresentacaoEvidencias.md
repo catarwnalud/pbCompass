@@ -118,24 +118,18 @@
 # 
 * Seção 7: Exercícios Python || - 2/2
 #
-  - Desafio 1: 
-  
-  [Exercício 1](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa1.txt)
+  - [Desafio 1](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa1.txt)
 
-  - Desafio 2: 
-  
-  [Exercício 2](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa2.txt)
 
-  - Desafio 3: 
-  
-  [Exercício 3](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa3.txt)
+  - [Desafio 2](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa2.txt)
 
-  - Desafio 4: 
-  
-  [Exercício 4](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa4.txt)
 
-  - Desafio 5: 
+  - [Desafio 3](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa3.txt)
   
-  [Exercício 5](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa5.txt)
+
+  - [Desafio 4](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa4.txt)
+
+
+  - [Desafio 5](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa5.txt)
 
 #
