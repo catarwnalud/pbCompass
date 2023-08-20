@@ -1,0 +1,50 @@
+Ator: Harrison Ford, faturamento bruto total: 4871.70 
+Ator: Samuel L. Jackson, faturamento bruto total: 4772.80 
+Ator: Morgan Freeman, faturamento bruto total: 4468.30 
+Ator: Tom Hanks, faturamento bruto total: 4340.80 
+Ator: "Robert Downey, Jr.", faturamento bruto total: 3947.30 
+Ator: Eddie Murphy, faturamento bruto total: 3810.40 
+Ator: Tom Cruise, faturamento bruto total: 3587.20 
+Ator: Johnny Depp, faturamento bruto total: 3368.60 
+Ator: Michael Caine, faturamento bruto total: 3351.50 
+Ator: Scarlett Johansson, faturamento bruto total: 3341.20 
+Ator: Gary Oldman, faturamento bruto total: 3294.00 
+Ator: Robin Williams, faturamento bruto total: 3279.30 
+Ator: Bruce Willis, faturamento bruto total: 3189.40 
+Ator: Stellan Skarsgard, faturamento bruto total: 3175.00 
+Ator: Anthony Daniels, faturamento bruto total: 3162.90 
+Ator: Ian McKellen, faturamento bruto total: 3150.40 
+Ator: Will Smith, faturamento bruto total: 3149.10 
+Ator: Stanley Tucci, faturamento bruto total: 3123.90 
+Ator: Matt Damon, faturamento bruto total: 3107.30 
+Ator: Robert DeNiro, faturamento bruto total: 3081.30 
+Ator: Cameron Diaz, faturamento bruto total: 3031.70 
+Ator: Liam Neeson, faturamento bruto total: 2942.70 
+Ator: Andy Serkis, faturamento bruto total: 2890.60 
+Ator: Don Cheadle, faturamento bruto total: 2885.40 
+Ator: Ben Stiller, faturamento bruto total: 2827.00 
+Ator: Helena Bonham Carter, faturamento bruto total: 2822.00 
+Ator: Orlando Bloom, faturamento bruto total: 2815.80 
+Ator: Woody Harrelson, faturamento bruto total: 2815.80 
+Ator: Cate Blanchett, faturamento bruto total: 2802.60 
+Ator: Julia Roberts, faturamento bruto total: 2735.30 
+Ator: Elizabeth Banks, faturamento bruto total: 2726.30 
+Ator: Ralph Fiennes, faturamento bruto total: 2715.30 
+Ator: Emma Watson, faturamento bruto total: 2681.90 
+Ator: Tommy Lee Jones, faturamento bruto total: 2681.30 
+Ator: Brad Pitt, faturamento bruto total: 2680.90 
+Ator: Adam Sandler, faturamento bruto total: 2661.00 
+Ator: Daniel Radcliffe, faturamento bruto total: 2634.40 
+Ator: Jonah Hill, faturamento bruto total: 2605.10 
+Ator: Owen Wilson, faturamento bruto total: 2602.30 
+Ator: Idris Elba, faturamento bruto total: 2580.60 
+Ator: Bradley Cooper, faturamento bruto total: 2557.70 
+Ator: Mark Wahlberg, faturamento bruto total: 2549.80 
+Ator: Jim Carrey, faturamento bruto total: 2545.20 
+Ator: Dustin Hoffman, faturamento bruto total: 2522.10 
+Ator: Leonardo DiCaprio, faturamento bruto total: 2518.30 
+Ator: Jeremy Renner, faturamento bruto total: 2500.30 
+Ator: Philip Seymour Hoffman, faturamento bruto total: 2463.70 
+Ator: Sandra Bullock, faturamento bruto total: 2462.60 
+Ator: Chris Evans, faturamento bruto total: 2457.80 
+Ator: Anne Hathaway, faturamento bruto total: 2416.50 

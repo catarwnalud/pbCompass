@@ -1,0 +1,50 @@
+Ator/Atriz: Harrison Ford, faturamento: 118.80 
+Ator/Atriz: Samuel L. Jackson, faturamento: 69.20 
+Ator/Atriz: Morgan Freeman, faturamento: 73.30 
+Ator/Atriz: Tom Hanks, faturamento: 98.70 
+Ator/Atriz: "Robert Downey, Jr.", faturamento: 74.50 
+Ator/Atriz: Eddie Murphy, faturamento: 100.30 
+Ator/Atriz: Tom Cruise, faturamento: 99.60 
+Ator/Atriz: Johnny Depp, faturamento: 74.90 
+Ator/Atriz: Michael Caine, faturamento: 57.80 
+Ator/Atriz: Scarlett Johansson, faturamento: 90.30 
+Ator/Atriz: Gary Oldman, faturamento: 86.70 
+Ator/Atriz: Robin Williams, faturamento: 66.90 
+Ator/Atriz: Bruce Willis, faturamento: 53.20 
+Ator/Atriz: Stellan Skarsgard, faturamento: 73.80 
+Ator/Atriz: Anthony Daniels, faturamento: 451.80 
+Ator/Atriz: Ian McKellen, faturamento: 101.60 
+Ator/Atriz: Will Smith, faturamento: 131.20 
+Ator/Atriz: Stanley Tucci, faturamento: 62.50 
+Ator/Atriz: Matt Damon, faturamento: 79.70 
+Ator/Atriz: Robert DeNiro, faturamento: 39.00 
+Ator/Atriz: Cameron Diaz, faturamento: 89.20 
+Ator/Atriz: Liam Neeson, faturamento: 46.70 
+Ator/Atriz: Andy Serkis, faturamento: 125.70 
+Ator/Atriz: Don Cheadle, faturamento: 84.90 
+Ator/Atriz: Ben Stiller, faturamento: 76.40 
+Ator/Atriz: Helena Bonham Carter, faturamento: 78.40 
+Ator/Atriz: Orlando Bloom, faturamento: 165.60 
+Ator/Atriz: Woody Harrelson, faturamento: 56.30 
+Ator/Atriz: Cate Blanchett, faturamento: 71.90 
+Ator/Atriz: Julia Roberts, faturamento: 65.10 
+Ator/Atriz: Elizabeth Banks, faturamento: 77.90 
+Ator/Atriz: Ralph Fiennes, faturamento: 75.40 
+Ator/Atriz: Emma Watson, faturamento: 157.80 
+Ator/Atriz: Tommy Lee Jones, faturamento: 58.30 
+Ator/Atriz: Brad Pitt, faturamento: 67.00 
+Ator/Atriz: Adam Sandler, faturamento: 83.20 
+Ator/Atriz: Daniel Radcliffe, faturamento: 155.00 
+Ator/Atriz: Jonah Hill, faturamento: 89.80 
+Ator/Atriz: Owen Wilson, faturamento: 66.70 
+Ator/Atriz: Idris Elba, faturamento: 99.30 
+Ator/Atriz: Bradley Cooper, faturamento: 102.30 
+Ator/Atriz: Mark Wahlberg, faturamento: 70.80 
+Ator/Atriz: Jim Carrey, faturamento: 94.30 
+Ator/Atriz: Dustin Hoffman, faturamento: 58.70 
+Ator/Atriz: Leonardo DiCaprio, faturamento: 100.70 
+Ator/Atriz: Jeremy Renner, faturamento: 119.10 
+Ator/Atriz: Philip Seymour Hoffman, faturamento: 61.60 
+Ator/Atriz: Sandra Bullock, faturamento: 70.40 
+Ator/Atriz: Chris Evans, faturamento: 106.90 
+Ator/Atriz: Anne Hathaway, faturamento: 96.70 
