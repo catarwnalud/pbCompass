@@ -23,6 +23,6 @@
 
 - [Desafio da Seção 7](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/desafioParte7.py) 
 
-  (Os resultados estão na pasta 'evidencias')
-
 #
+
+ Os resultados estão na pasta 'evidencias'
