@@ -120,22 +120,22 @@
 #
   - Exercício 1: 
   
-  [](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa1.txt)
+  [Exercício 1](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa1.txt)
 
   - Exercício 2: 
   
-  [](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa2.txt)
+  [Exercício 2](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa2.txt)
 
   - Exercício 3: 
   
-  [](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa3.txt)
+  [Exercício 3](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa3.txt)
 
   - Exercício 4: 
   
-  [](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa4.txt)
+  [Exercício 4](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa4.txt)
 
   - Exercício 5: 
   
-  [](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa5.txt)
+  [Exercício 5](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/evidencias/etapa5.txt)
 
 #
