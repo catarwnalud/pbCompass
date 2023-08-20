@@ -22,6 +22,7 @@
 ### Seção 7: Exercícios Python || - 2/2
 
 - [Desafio da Seção 7](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/exercicios/desafioParte7.py) 
+
   (Os resultados estão na pasta 'evidencias')
 
 #
