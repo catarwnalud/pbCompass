@@ -5,6 +5,6 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_3/certificados/certificado.png)
 
 # 
