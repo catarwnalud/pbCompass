@@ -47,3 +47,23 @@ def pares_soma(lista):
 print(pares_soma(lista))
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
+
+"""
+E2 - Utilizando high order functions, implemente o corpo da função conta_vogais. O parâmetro de entrada será uma string e
+     o resultado deverá ser a contagem de vogais presentes em seu conteúdo.
+
+     É obrigatório aplicar as seguintes funções:
+
+     len
+
+     filter
+
+     lambda
+"""
+
+def conta_vogais(texto:str)-> int:
+    vogais = 'aeiou'
+    return len(list(filter(lambda t: t in vogais , texto.lower())))
+
+#--------------------------------------------------------------------------------------------------------------------------------------#
+
