@@ -125,3 +125,55 @@ operandos  = [(3, 6), (-7, 4.9), (8, -8), (10, 2), (8, 4)]
 print(calcular_valor_maximo(operadores, operandos))
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
+
+"""
+E5 - Um determinado sistema escolar exporta a grade de notas dos estudantes em formato CSV. 
+     Cada linha do arquivo corresponde ao nome do estudante, acompanhado de 5 notas de avaliação, no intervalo [0-10]. 
+     É o arquivo estudantes.csv de seu exercício.
+
+     Precisamos processar seu conteúdo, de modo a gerar como saída um relatório em formato textual contendo as seguintes informações:
+
+     Nome do estudante
+
+     Três maiores notas, em ordem decrescente
+
+     Média das três maiores notas, com duas casas decimais de precisão
+
+     O resultado do processamento deve ser escrito na saída padrão (print), ordenado pelo nome do estudante e obedecendo ao formato descrito a seguir:
+
+     Nome: <nome estudante> Notas: [n1, n2, n3] Média: <média>
+
+     Exemplo:
+
+     Nome: Maria Luiza Correia Notas: [7, 5, 5] Média: 5.67
+
+     Nome: Maria Mendes Notas: [7, 3, 3] Média: 4.33
+
+     Em seu desenvolvimento você deverá utilizar lambdas e as seguintes funções:
+
+     round
+
+     map
+
+     sorted
+"""
+import csv
+
+with open('estudantes.csv', 'r',  encoding = 'utf-8') as dados:
+
+    diario = sorted(csv.reader(dados))
+
+    nomes = []
+    notas = []
+
+    for linha in diario:
+        linha[1:] = sorted(map(lambda x: int(x), linha[1:]), reverse = True)
+        notas.append(linha[1:4])
+        nomes.append(linha[0])
+    
+    medias = list(map(lambda  l: (l[0]+l[1]+ l[2])/ len(l), notas))
+
+for i in range(len(medias)):
+    print('Nome: {} Notas: {} Média: {}'.format(nomes[i], notas[i], round(medias[i],2)))
+
+#--------------------------------------------------------------------------------------------------------------------------------------#
