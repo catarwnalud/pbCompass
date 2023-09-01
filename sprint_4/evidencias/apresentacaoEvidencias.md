@@ -1,7 +1,7 @@
 #
 # Evidências da Sprint 4
 
-### NOME!!!!!
+### Programação funcional com python
 
 *Exercícios propostos*
 
