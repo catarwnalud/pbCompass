@@ -1,10 +1,10 @@
 #
 # Certificados da Sprint 4
 
-### NOMEE!!!!!
+### Cultura ágil
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_4/certificados/cultura_agil.jpg)
 
 # 
