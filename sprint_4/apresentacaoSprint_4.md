@@ -14,24 +14,64 @@
 #
   # Sprint 4
 
-   ### NOME!!!!!
+  ### Programação Funcional
       
-   - ;
+   - O que é programação funcional?;
     
-   -;
+   - First Class Functions;
 
-   - ;
+   - High Order Functions;
 
-   - ;
+   - Anonymous Function (Lambda);
 
-   - ;
+   - Closure;
 
-   - ;
+   - Map;
 
-   -;
+   - Filter;
 
-   -;
-
-   - .
+   - Reduce.
      
-#   
+#
+
+  ### Docker para Desenvolvedores
+
+  - O que é Docker e instalação;
+
+  - O que são containers?;
+
+  - Comando para executar containers no modo iteratido ou detached, verificar constainers rodando, parar, remover e reinicializar;
+
+  - O que é uma imagem?;
+
+  - Comando para executar uma imagem em um container, downloads de imagens, build, remoção;
+
+  - O que são volumes?;
+
+  - Criação, listar, inspecionar e remover volumes;
+
+  - Conectar containers;
+
+  - Arquivos YAML;
+
+  - Gerenciamento de múltiplos containers com Docker Compose;
+
+  - Orquestração com Docker Swarm e Kubernetes.
+
+#
+
+  ### Estatística Descritiva com Python
+
+  - Fundamentes da estatística;
+
+  - Representações gráficas;
+
+  - Medidas de Tendência Central (MTC);
+
+  - Medidas de Dispersão (MD);
+
+  - Medidas de Assimetria (MA);
+
+  - Aplicações em Data Scienc.
+
+#
