@@ -3,7 +3,7 @@
 
 ### AWS Skill Builder - AWS Partner: Sales Accreditation (Business)
 
-- [Resumo](#) 
+- [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/exercicios/resumoBusiness.md) 
 
 #
 
