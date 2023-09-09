@@ -1,6 +1,5 @@
 #
 ## AWS Skill Builder - AWS Partner: Accreditation (Technical)
-#
 
 - Benefícios da computação em nuvem
 
