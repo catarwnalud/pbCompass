@@ -9,7 +9,7 @@
 
 ### AWS Skill Builder - AWS Partner: Accreditation (Technical)
 
-- [Resumo](#) 
+- [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/exercicios/resumoTechnical.md) 
 
 #
 
