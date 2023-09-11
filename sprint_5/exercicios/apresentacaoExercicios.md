@@ -15,7 +15,7 @@
 
 ### AWS Skill Builder - AWS Partner: Cloud Economics Accreditation 
 
-- [Resumo](#) 
+- [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/exercicios/resumoEconomics.md) 
 
 #
 
