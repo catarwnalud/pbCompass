@@ -41,7 +41,11 @@
 
   - Módulo 2: 
   
-  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_2.png) 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_2.png)
+
+  - Módulo 3: 
+  
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_7.png)  
 
   - Módulo 4: 
   
