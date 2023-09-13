@@ -53,4 +53,12 @@
 
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_6.png)
 
-# 
+  - Módulo 5: 
+  
+  ![](economic_8)
+
+  - Módulo 6: 
+  
+  ![](economic_9)
+
+#
