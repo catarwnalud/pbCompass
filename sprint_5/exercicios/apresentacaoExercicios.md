@@ -21,6 +21,6 @@
 
 ### AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner
 
-- [Resumo](#) 
+- [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_9.png) 
 
 #
