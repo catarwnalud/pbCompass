@@ -55,10 +55,10 @@
 
   - Módulo 5: 
   
-  ![](economic_8)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_8.png)
 
   - Módulo 6: 
   
-  ![](economic_9)
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_9.png)
 
 #
