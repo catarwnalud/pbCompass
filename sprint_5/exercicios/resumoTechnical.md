@@ -1,7 +1,7 @@
 #
 ## AWS Skill Builder - AWS Partner: Accreditation (Technical)
 
-- Benefícios da computação em nuvem
+### Benefícios da computação em nuvem
 
     - Agilidade: as organizações podem inovar com mais rapidez devido ao acesso facilitado a uma ampla variedade de tecnologias.
 
@@ -13,7 +13,7 @@
 
 #
 
-- Infraestrutura
+### Infraestrutura
 
     As regiões são isoladas entre si, cada região é em uma área geográfica separada com vários locais separados uns dos outros, conhecidos como zonas de disponibilidade ou AZs. Cada AZs é totalmente isolado de outro AZ dentro de uma região.
 
@@ -21,7 +21,7 @@
 
 #
 
-- Serviços computacionais
+### Serviços computacionais
 
     Desenvolva, implante, execute e dimensione cargas de trabalho na AWS Cloud.
 
@@ -44,7 +44,7 @@
     O serviço de computação da AWS possibilita instâncias do EC2 com os componentes básicos, aplicar AMIs para personalizar as instâncias, configurar o auto scaling e o balanceamento de carga, pagando apenas pelo que é usado.
 
 
-- Serviços de armazenamento
+### Serviços de armazenamento
 
     São locais confiáveis, dimensionáveis e seguros para os dados.
 
@@ -54,7 +54,7 @@
 
     - Amazon S3 Glacier:  permite reter dados por meses, anos e décadas.
 
-- Serviços de bancos de dados
+### Serviços de bancos de dados
 
     Desenvolvido especificamente para casos de usos de aplicativos específicos.
 
@@ -66,19 +66,19 @@
 
     O objetivo do serviço de banco de dados da AWS é substituir as tarefas diárias de gerenciamento por processos de valor agregado.
 
-- Serviços de rede
+### Serviços de rede
 
     É possível criar uma rede virtual na nuvem ou VPC, atribuir ao VPC intervalo de endereços IP e configurar sub-redes públicas e privadas dentro da rede maior.
 
     Posso proteger a sub-redes usando ACL de redes e criar outra camada de segurança no nível da instância usando grupos de segurança.
 
-- Serviços de segurança
+### Serviços de segurança
 
     Possui modelo de responsabilidade compartilhada. Os clientes são responsáveis por aspectos relacionados à proteção dos dados e recursos criados na nuvem,  enquanto a WS o processo a parte de segurança da infraestrutura e os seus serviços gerenciados.
 
 #
 
-- Integração de serviços e soluções
+### Integração de serviços e soluções
 
     Os sete R 's são as maneiras de migrar um sistema on-premise para a nuvem.
 
@@ -110,7 +110,9 @@
 
     Move fluxos de trabalho para a SaaS.
 
-- Práticas recomendadas de arquitetura na nuvem
+#
+
+### Práticas recomendadas de arquitetura na nuvem
 
     - Design à prova de falhas
 
@@ -150,7 +152,7 @@
 
 # 
 
-- Well-Architected Framework 
+### Well-Architected Framework 
 
     - O que é?
 

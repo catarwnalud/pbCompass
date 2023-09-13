@@ -11,7 +11,9 @@
     - Aumenta o tamanho da oferta (5X maior o aumento da receita)
     - Acelera o ciclo de vendas em até 20 dias
 
-#### Valor empresarial
+#
+
+### Valor empresarial
 
 - É baseado no custo total de propiedade (TCO)
 - Realizado na pré-venda
