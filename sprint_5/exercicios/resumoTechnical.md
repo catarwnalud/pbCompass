@@ -179,3 +179,5 @@
         - Preparação e planejamento: determinar estratégias de migração e criar uma landing zone bem arquitetada
 
         - Migração e modernização: projetar, migrar e validar cada aplicativo de maneira automática ou manual e migrar os dados
+
+#
