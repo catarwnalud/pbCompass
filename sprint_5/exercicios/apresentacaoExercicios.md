@@ -24,4 +24,3 @@
 - [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/exercicios/resumoPractitioner.md) 
 
 #
-
