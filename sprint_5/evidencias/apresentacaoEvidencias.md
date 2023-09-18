@@ -62,3 +62,5 @@
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/evidencias/economic_9.png)
 
 #
+
+*O Exam Prep: AWS Certified Cloud Practitioner e o AWS Partner: Sales Accreditation (Business) foram totalmente teóricos*
