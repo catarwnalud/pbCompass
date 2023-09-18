@@ -29,6 +29,6 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_5/certificados/practitioner.png)
 
 # 
