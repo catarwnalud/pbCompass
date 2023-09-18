@@ -39,7 +39,7 @@
 
 #
 
-### Securança e Conformidade 
+### Segurança e Conformidade 
 
     "Quem é responsável pelo que em relação à segurança?"
 
