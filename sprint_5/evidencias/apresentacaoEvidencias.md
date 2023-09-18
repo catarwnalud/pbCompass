@@ -64,3 +64,5 @@
 #
 
 *O Exam Prep: AWS Certified Cloud Practitioner e o AWS Partner: Sales Accreditation (Business) foram totalmente teóricos*
+
+#
