@@ -230,8 +230,145 @@
 
 ### Lição 5, veracidade: limpeza e transformação
 
+    Quando se tem dados que não são controlados, provenientes de vários sistemas e não consegue fazer curadoria desses dados, você tem um problema de veracidade.
 
+- Curadoria: processo de selecionar, organizar e cuidar de itens em uma coleção.
 
+- Integridade dos dados: manutenção e a garantia de precisão e consistência dos dados durante seu ciclo de vida.
+
+- Veracidade: grau de exatidão dos dados, se são precisos e confiáveis
+
+#
+
+## Tópico 1: Compreensão de integridade dos dados
+
+    Para cada fase do ciclo de vida do dado, a integridade garante a exatidão do dado.
+
+- Criação: a integridade nessa fase significa garantir a precisão. Isso geralmente envolve auditórios de software
+
+- Agregação: pouca possibilidade de erro ao agregar, mas sim na comparação de agregados.
+
+- Armazenamento: o perigo nos dados em repouso está em possíveis atualizações que podem alterar os dados, é importante ter auditorias neste estágio.
+
+- Acesso: nesse estágio o acesso ao dados deve ser somente de leitura e devem ser auditados regularmente.
+
+- Compartilhamento: onde a veracidade é testada, usuários empresariais sabem o que esperar dos relatórios.
+
+- Arquivamento: a segurança ao arquivar dados é o fator mais importante, esses repositórios devem ter uma lista de acesso limitada e ser somente leitura.
+
+- Limpeza de dados: processo de detecção e correção de corrupções nos dados.
+
+- Integridade referencial: processo para garantir que as restrições da tabela sejam impostas.
+
+- Integridade de domínio: garantir que os dados colocados em um campo são do tipo especificado para o campo.
+
+- Integridade de entidade: é o processo para garantir que os valores armazenados em um campo correspondem às restrições definidas para o campo.
+
+- Identificar problemas na integridade:
+
+    - Saiba qual deve ser a limpeza: o que é considerado valor para sua empresa.
+
+    - Saiba de onde vêm os erros: rastreie a origem de dados com erro.
+
+    - Saiba quais alterações são aceitáveis: saiba quais os efeitos de possíveis alterações em dados.
+
+    - Saiba se os dados originais têm valor: em alguns sistemas dados alterados não tem mais valor, é importante que dados originais e transformados sejam mantidos no sistema.
+
+- Esquemas de banco de dados
+
+    Maneira como um banco de dados organiza os objetos de dados e impoe restrições de integridade.
+
+    - Esquema lógico: se concentra nas restrições a serem aplicadas aos dados. Isso inclue organizar objetos de dadose impor restrições de integridade.
+
+    - Esquema físico: se concentra no armazenamento real de dados em discos ou repositórios na nuvem.
+
+#
+
+## Tópico 2: compreensão da consistência do banco de dados
+
+    Quando dados são armazenados em um banco de dados, a consistência é responsabilidade do banco de dados. Existem dois métodos que banco de dados implementam para garantir a consistência: acid e base.
+
+- ACID: atomicidade, consistência, isolamento, durabilidade.
+
+    - Usado em banco de dados relacionais.
+
+    - Retorna a versão mais consistente e recente dos dados.
+
+- BASE: 
+
+    - Se concentra na disponibilidade rápida dos dados
+
+    - Implementado em banco de dados NoSQL.
+
+    - Disponibiliza a alteração imediata na instância em que foi feita e depois propaga.
+
+#
+
+## Tópico 3: Introdução ao processo ETL
+
+- Extração: extrair os dados das diferentes fontes.
+
+    Quatro áreas principais para planejar:
+
+    1. Identificar onde os dados de origem reside
+
+    2. Planejar quando a extração vai ocorrer
+
+    3. Onde os dados serão armazenados durante o processo
+
+    4. Frequência que a extração vai ser repetida
+
+- Transformar: aplicar regras ou não no dados coletados.
+
+- Carregar: escolher o local para armazenar os dados recém transformados.
+
+- A AWS oferece serviços para todos os processos de ETL
+
+    No processo de transformação há duas opções:
+
+    - Amazon EMR: prático para criar pipeline de dados personalizado, além de ter custos menores.
+
+    - AWS Glue: ferramentas ETL gerenciadas sem servidor. Para tarefas simples.
+
+#
+
+### Lição 6, valor: relatório e business intelligence
+
+    Quando há grandes volumes de dados usados para corroborar alguma informação valiosa, pode estar perdendo o valor dos seus dados
+
+#
+
+## Tópico 1: Introdução a análise de dados
+
+- O que é análise de dados? 
+
+    A análise de dados serve para encontrar significado nos dados. Tem duas classificações:
+
+    - Análise de informação: é o processo de análise de informação para encontrar o valor contido nela
+
+    - Análise operacional: é semelhante a análise de informações, mas ao invés de ser mais abrangente ela se concentra nas operações digitais. Na AWS, o Amazon Elasticsearch Service é comumente usado para implementar análises operacionais.
+
+- Benefícios da análise operacional
+
+    - Ação oportuna: geração e economia de tempo
+
+    - Visibilidade imediata: a possibilidade de encontrar informações de forma imediata.
+
+    - Informação contínuas: possibilita prever tendências, ameaças e oportunidades
+
+- Tipos de análise:
+
+    - Análise descritiva: se concentra em retrospectiva. "O que aconteceu?"
+
+    - Análise diagnostica: "Por que isso aconetceu?". Compara dados históricos com outros dados, encontrando padrões e dependenetes.
+
+    - Análise preditiva: "O que acontecerá?". Prevê o futuro.
+
+    - Análise prescritiva: "O que devo fazer?". Usada para receitar ações a serem tomadas com base em dados fornecidas.
+
+    - Inteligência cognitiva e artificial: "Quais são as ações recomendadas?". Gera hipoteses a partir de dados. As respostas são fornecidas como recomendação e classificação de confiança.
+
+#
 
 
 
