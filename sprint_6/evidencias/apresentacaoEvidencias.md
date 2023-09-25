@@ -94,3 +94,23 @@
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/cenariofic2.png)
 
 #        
+
+### Why Analytics for Games?
+
+*Exercícios propostos na plataforma da AWS*
+
+  - Módulo 1:
+
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo1.png)
+
+  - Módulo 2:
+
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.png)
+
+  - Módulo 3:
+
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo3.png)
+
+  - Módulo 4:
+
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo4.png)
