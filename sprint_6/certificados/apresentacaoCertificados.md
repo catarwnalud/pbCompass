@@ -21,7 +21,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/athena.png)
 
 #
 
@@ -29,7 +29,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/emr.png)
 
 #
 
@@ -38,7 +38,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/kinesisAnalytics.png)
 
 #
 
@@ -46,7 +46,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/kinesisStreams.png)
 
 #
 
@@ -54,7 +54,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/quicksight.png)
 
 #
 
@@ -62,7 +62,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/redshift.png)
 
 #
 
@@ -70,7 +70,7 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/streamingData.png)
 
 #
 
@@ -78,6 +78,6 @@
 
 - Certificado: 
 
-![Certificado](#)
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/warehouseRedshift.png)
 
 # 
