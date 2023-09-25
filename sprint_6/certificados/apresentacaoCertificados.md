@@ -80,4 +80,20 @@
 
 ![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/warehouseRedshift.png)
 
+#
+
+### Introduction to AWS IoT Analytics
+
+- Certificado: 
+
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/iotAnalytics.png)
+
+#
+
+### Serverless Analytics
+
+- Certificado: 
+
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/serverlessAnalytics.png)
+
 # 
