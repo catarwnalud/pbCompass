@@ -55,42 +55,42 @@
 
   - Módulo 1:
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo1.1.png)
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo1.2.png) 
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo1.3.png) 
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo1.4.png)
 
   - Módulo 2:
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.1.png)
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.2.png) 
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.3.png) 
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.4.png)
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.5.png) 
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.6.png) 
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo2.7.png)
 
   - Módulo 3:
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo3.1.png)
 
-  ![]() 
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo3.2.png) 
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/modulo3.3.png)
 
   - Cenário fictício:
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/cenariofic1.png)
 
-  ![]()
+  ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/cenariofic2.png)
 
 #        
