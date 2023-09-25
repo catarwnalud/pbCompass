@@ -47,4 +47,50 @@
 
   ![](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/evidencias/licao6t2.png)
 
+#
 
+### Data Analytics Business
+
+*Exercícios propostos na plataforma da AWS*
+
+  - Módulo 1:
+
+  ![]()
+
+  ![]() 
+
+  ![]() 
+
+  ![]()
+
+  - Módulo 2:
+
+  ![]()
+
+  ![]() 
+
+  ![]() 
+
+  ![]()
+
+  ![]() 
+
+  ![]() 
+
+  ![]()
+
+  - Módulo 3:
+
+  ![]()
+
+  ![]() 
+
+  ![]()
+
+  - Cenário fictício:
+
+  ![]()
+
+  ![]()
+
+#        
