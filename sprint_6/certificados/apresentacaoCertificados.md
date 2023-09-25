@@ -96,4 +96,12 @@
 
 ![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/serverlessAnalytics.png)
 
+#
+
+### Why Analytics for Games?
+
+- Certificado: 
+
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/gamesAnalytics.png)
+
 # 
