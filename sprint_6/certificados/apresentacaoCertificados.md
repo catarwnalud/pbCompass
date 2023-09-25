@@ -8,3 +8,11 @@
 ![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/fundamentals.png)
 
 # 
+
+### Data Analytics Business
+
+- Certificado: 
+
+![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/certificados/business.png)
+
+# 
