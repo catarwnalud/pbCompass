@@ -1,5 +1,4 @@
-
-
+# Exercício Athena
 
 with decadas as (
     select nome,
