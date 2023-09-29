@@ -26,3 +26,10 @@
     - [Resultado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/dec2010.csv)
 #
 
+###  AWS Athena
+
+- [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/exercicioLambda.txt)
+
+    - [Resultado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/resultLambda.png)
+#
+
