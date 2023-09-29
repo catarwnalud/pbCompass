@@ -1,0 +1,109 @@
+
+
+
+with decadas as (
+    select nome,
+            total,
+            ano,
+        case 
+            when ano >= 1950 and ano <= 1959 then 1950
+            when ano >= 1960 and ano <= 1969 then 1960
+            when ano >= 1970 and ano <= 1979 then 1970
+            when ano >= 1980 and ano <= 1989 then 1980
+            when ano >= 1990 and ano <= 1999 then 1990
+            when ano >= 2000 and ano <= 2009 then 2000
+            when ano >= 2010 and ano <= 2019 then 2010
+            when ano >= 2020 then 2020 
+        end as decada
+    from meubanco.dados
+    where ano >= 1950
+    group by nome, total, ano
+    order by decada asc
+    )
+   
+   
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 1950
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 1960
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+    
+    
+
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 1970
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 1980
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 1990
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+    
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 2000
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+
+select nome,
+    decada,
+    sum(total) as quantidade_decada
+from decadas
+where decada = 2010
+group by nome, decada
+order by quantidade_decada desc
+limit 3
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
