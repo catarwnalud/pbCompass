@@ -257,7 +257,7 @@
   ### Data Analytics Fundamentals
 
   -  Lição 1: Introdução a soluções de avaliações de dados;
-
+    
     - Tópico 1: Análise de dados e soluções de avaliações de dados;
 
     - Tópico 2: Introdução aos desafios de análise de dados;
@@ -333,7 +333,7 @@
     - Diferenciais de análise de dados da AWS;
 
   -  Módulo 3: Conversas de negócios;
-
+  
     - Perguntas sobre a descoberta e público-alvo;
 
 #
