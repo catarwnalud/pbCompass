@@ -15,7 +15,7 @@
 
 ###  AWS Athena
 
-- [Resumo](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/exercicioAthena.txt)
+- [Query](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/exercicioAthena.txt)
 
     - [Resultado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/dec1950.csv)
     - [Resultado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_6/exercicios/dec1960.csv)
