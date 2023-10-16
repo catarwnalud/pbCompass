@@ -37,7 +37,6 @@
 
 #
 
-
 - Escrever o código necessário para alterar a caixa dos valores da coluna nome para MAIÚSCULO
 
     - [Código](labglue3.py)
