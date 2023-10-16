@@ -7,4 +7,12 @@
 
 ![Certificado](https://github.com/catarwnalud/pbCompass/blob/master/sprint_7/certificados/hadoop.jpg)
 
+#
+
+### Spark
+
+- Certificado: 
+
+![Certificado]()
+
 # 
