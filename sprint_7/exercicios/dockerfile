@@ -1,0 +1,13 @@
+
+FROM python:3.8
+
+WORKDIR /app
+
+COPY img.py /app/img.py
+COPY movies.csv /app/movies.csv
+COPY series.csv /app/series.csv
+
+RUN pip install boto3
+
+CMD ["python", "img.py"]
+
