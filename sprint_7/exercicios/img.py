@@ -2,9 +2,9 @@ import boto3
 import csv
 import datetime
 
-aws_access_key_id = 'AKIAVJNDGFPAM3SGNI4P'
-aws_secret_access_key = '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'
-bucket_name = 'dados-desafio'
+aws_access_key_id = ''
+aws_secret_access_key = ''
+bucket_name = ''
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
 
 local_movies_file = 'movies.csv'
