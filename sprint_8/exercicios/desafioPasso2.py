@@ -1,5 +1,5 @@
 """
-Complementando com mais dados utilizando o TMDB
+Complementando com mais dados utilizando a api do TMDB
 
 """
 
