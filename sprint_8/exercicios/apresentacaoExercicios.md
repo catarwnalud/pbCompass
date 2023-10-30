@@ -5,7 +5,7 @@
 
 - Passo 1: Filtragem e arquivos json de 'movies.csv' e 'series.csv'
 
-    - [Código](desafioParte1.py)
+    - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_8/exercicios/desafioPasso1.py)
 
 #
 
