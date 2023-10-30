@@ -11,6 +11,6 @@
 
 - Passo 2: TMDB
 
-     - [Código]()
+     - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_8/exercicios/desafioPasso2.py)
 
 #
