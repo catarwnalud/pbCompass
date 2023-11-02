@@ -33,3 +33,11 @@
      - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_8/exercicios/secao4t3e3.py)
 
 #
+
+### Seção 4: Tarefa 4 - Exercícios - Apache Spark
+
+- Exercício 1: 
+
+    - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_8/exercicios/secao4t4.py)
+
+#
