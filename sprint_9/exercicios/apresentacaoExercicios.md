@@ -7,7 +7,7 @@
 
     - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_9/exercicios/normalizado.sqlite)
 
-    * Feito no SQL Online IDE *
+    *Feito no SQL Online IDE*
 #
 
 - Tarefa 2:
