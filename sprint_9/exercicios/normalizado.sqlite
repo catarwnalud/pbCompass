@@ -1,0 +1,58 @@
+CREATE TABLE cliente (
+    id_cliente INTEGER PRIMARY KEY,
+    nome_cliente TEXT,
+    cidade_cliente TEXT,
+    estado_cliente TEXT,
+    pais_cliente TEXT
+);
+
+INSERT INTO cliente (id_cliente, nome_cliente, cidade_cliente, estado_cliente, pais_cliente)
+SELECT DISTINCT idcliente, nomecliente, cidadecliente, estadocliente, paiscliente
+FROM tb_locacao;
+
+CREATE TABLE carro (
+    id_carro INTEGER PRIMARY KEY,
+    classi_carro TEXT,
+    marca_carro TEXT,
+    modelo_carro TEXT,
+    ano_carro INTEGER,
+    id_combustivel INTEGER,
+    tipo_combustivel TEXT
+);
+
+INSERT INTO carro (id_carro, classi_carro, marca_carro, modelo_carro, ano_carro, id_combustivel, tipo_combustivel)
+SELECT DISTINCT idcarro, classicarro, marcacarro, modelocarro, anocarro, idcombustivel, tipocombustivel
+FROM tb_locacao;
+
+
+CREATE TABLE vendedor (
+    id_vendedor INTEGER PRIMARY KEY,
+    nome_vendedor VARCHAR(15),
+    sexo_vendedor SMALLINT,
+    estado_vendedor VARCHAR(40)
+);
+
+INSERT INTO vendedor (id_vendedor , nome_vendedor, sexo_vendedor, estado_vendedor)
+SELECT DISTINCT idvendedor , nomevendedor, sexovendedor, estadovendedor
+FROM tb_locacao;
+
+CREATE TABLE locacao (
+    id_locacao INTEGER NOT NULL PRIMARY KEY,
+    id_cliente INTEGER,
+    id_vendedor INTEGER,
+    id_carro INTEGER,
+    km_carro INT,
+    data_locacao DATE,
+    hora_locacao TIME,
+    qtd_diaria INTEGER,
+    vlr_diaria DECIMAL(18,2),
+    data_entrega DATE,
+    hora_entrega TIME,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor),
+    FOREIGN KEY (id_carro) REFERENCES carro(id_carro)
+);
+
+INSERT INTO locacao (id_locacao, id_cliente, id_vendedor, id_carro, km_carro, data_locacao, hora_locacao, qtd_diaria, vlr_diaria, data_entrega, hora_entrega)
+SELECT idlocacao, idcliente, idvendedor, idcarro, kmcarro, datalocacao, horalocacao, qtddiaria, vlrdiaria, dataentrega, horaentrega
+FROM tb_locacao;
