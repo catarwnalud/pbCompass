@@ -1,5 +1,5 @@
 CREATE TABLE cliente (
-    id_cliente INTEGER PRIMARY KEY,
+    id_cliente INTEGER NOT NULL PRIMARY KEY,
     nome_cliente TEXT,
     cidade_cliente TEXT,
     estado_cliente TEXT,
@@ -11,7 +11,7 @@ SELECT DISTINCT idcliente, nomecliente, cidadecliente, estadocliente, paisclient
 FROM tb_locacao;
 
 CREATE TABLE carro (
-    id_carro INTEGER PRIMARY KEY,
+    id_carro INTEGER NOT NULL PRIMARY KEY,
     classi_carro TEXT,
     marca_carro TEXT,
     modelo_carro TEXT,
@@ -26,7 +26,7 @@ FROM tb_locacao;
 
 
 CREATE TABLE vendedor (
-    id_vendedor INTEGER PRIMARY KEY,
+    id_vendedor INTEGER NOT NULL PRIMARY KEY,
     nome_vendedor VARCHAR(15),
     sexo_vendedor SMALLINT,
     estado_vendedor VARCHAR(40)
@@ -41,6 +41,17 @@ CREATE TABLE locacao (
     id_cliente INTEGER,
     id_vendedor INTEGER,
     id_carro INTEGER,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor),
+    FOREIGN KEY (id_carro) REFERENCES carro(id_carro)
+);
+
+INSERT INTO locacao (id_locacao, id_cliente, id_vendedor, id_carro)
+SELECT idlocacao, idcliente, idvendedor, idcarro
+FROM tb_locacao;
+
+CREATE TABLE total_locacao (
+    id_locacao INTEGER,
     km_carro INT,
     data_locacao DATE,
     hora_locacao TIME,
@@ -48,11 +59,9 @@ CREATE TABLE locacao (
     vlr_diaria DECIMAL(18,2),
     data_entrega DATE,
     hora_entrega TIME,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-    FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor),
-    FOREIGN KEY (id_carro) REFERENCES carro(id_carro)
+    FOREIGN KEY (id_locacao) REFERENCES locacao(id_locacao)
 );
 
-INSERT INTO locacao (id_locacao, id_cliente, id_vendedor, id_carro, km_carro, data_locacao, hora_locacao, qtd_diaria, vlr_diaria, data_entrega, hora_entrega)
-SELECT idlocacao, idcliente, idvendedor, idcarro, kmcarro, datalocacao, horalocacao, qtddiaria, vlrdiaria, dataentrega, horaentrega
+INSERT INTO total_locacao (id_locacao, km_carro, data_locacao, hora_locacao, qtd_diaria, vlr_diaria, data_entrega, hora_entrega)
+SELECT idlocacao, kmcarro, datalocacao, horalocacao, qtddiaria, vlrdiaria, dataentrega, horaentrega
 FROM tb_locacao;
