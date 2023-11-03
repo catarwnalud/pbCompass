@@ -1,0 +1,40 @@
+CREATE VIEW dim_carro AS
+SELECT carro.id_carro, carro.classi_carro, carro.marca_carro, carro.modelo_carro, carro.ano_carro, carro.tipo_combustivel
+FROM carro;
+
+
+CREATE VIEW dim_cliente AS
+SELECT cliente.id_cliente, cliente.nome_cliente, cliente.cidade_cliente, cliente.estado_cliente
+from cliente;
+
+
+CREATE VIEW dim_vendedor AS
+SELECT vendedor.id_vendedor, vendedor.nome_vendedor, vendedor.sexo_vendedor, vendedor.estado_vendedor
+from vendedor;
+
+
+CREATE VIEW dim_data_locacao AS
+SELECT total_locacao.id_locacao, total_locacao.data_locacao, total_locacao.hora_locacao
+from total_locacao;
+
+
+CREATE VIEW fato_locacao AS
+SELECT locacao.id_locacao, locacao.id_cliente, locacao.id_carro, locacao.id_vendedor, 
+	total_locacao.data_locacao, total_locacao.hora_locacao, total_locacao.qtd_diaria, total_locacao.vlr_diaria,
+    total_locacao.data_entrega, total_locacao.hora_entrega
+from total_locacao
+	LEFT JOIN locacao
+    		ON total_locacao.id_locacao = locacao.id_locacao;
+
+
+CREATE VIEW metrica_locacao AS
+SELECT locacao.id_locacao,
+	total_locacao.vlr_diaria,
+    total_locacao.qtd_diaria,
+	(total_locacao.vlr_diaria * total_locacao.qtd_diaria) as valor_total
+from locacao
+	LEFT JOIN total_locacao
+    		ON  locacao.id_locacao = total_locacao.id_locacao;
+
+
+
