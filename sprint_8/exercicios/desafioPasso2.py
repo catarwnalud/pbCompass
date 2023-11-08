@@ -3,13 +3,13 @@ Complementando com mais dados utilizando a api do TMDB
 
 """
 
-# Movies
+# MOVIES
 
 import requests
 import boto3
 import json
 
-# detalhes do filme com base no id do filme
+# Detalhes do filme com base no ID do filme
 def get_movie_details(movie_id, api_key):
     url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}'
     response = requests.get(url)
@@ -19,7 +19,7 @@ def get_movie_details(movie_id, api_key):
     else:
         return None
 
-# detalhes do elenco do filme com base no id do filme
+# Detalhes do elenco do filme com base no ID do filme
 def get_cast_details(movie_id, api_key):
     url = f'https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key={api_key}'
     response = requests.get(url)
@@ -29,21 +29,21 @@ def get_cast_details(movie_id, api_key):
     else:
         return None
 
-# informações dos filmes dos gêneros "War" e "Crime"
+# Informações dos filmes dos gêneros "War" e "Crime"
 def get_movies_info_by_genre(api_key, genre_ids):
 
-    # correspondência entre ids e nomes dos gêneros
+    # Correspondência entre IDs e nomes dos gêneros
     genre_names = {10752: 'War', 80: 'Crime'}
 
-    base_url ='https://api.themoviedb.org/3/discover/movie'
+    base_url = 'https://api.themoviedb.org/3/discover/movie'
     all_movies_info = []
 
     for genre_id in genre_ids:
-        for page in range(1, 51): 
+        for page in range(1, 51):
             params = {
                 'api_key': api_key,
                 'with_genres': genre_id,
-                'page': page 
+                'page': page
             }
 
             response = requests.get(base_url, params=params)
@@ -53,72 +53,94 @@ def get_movies_info_by_genre(api_key, genre_ids):
                 for movie in movies:
                     movie_id = movie.get('id')
 
-                    # detalhes do filme
+                    # Detalhes do filme
                     movie_details = get_movie_details(movie_id, api_key)
                     if movie_details is None:
                         continue
 
-                    # detalhes do elenco
+                    # Detalhes do elenco
                     cast_details = get_cast_details(movie_id, api_key)
                     if cast_details is None:
                         continue
 
-                    # informações
+                    # Informações
                     movie_info = {
                         'id': movie_details.get('id'),
                         'titulo': movie_details.get('title'),
-                        'anoLancamento': movie_details.get('release_date'),
+                        'anoLancamento': movie_details.get('release_date')[:4],  # Apenas o ano de lançamento
                         'tempoMinutos': movie_details.get('runtime'),
-                        'genero': genre_names.get(genre_id),  # substituição do id pelo nome do genero
+                        'genero': genre_names.get(genre_id),  # Substituição do ID pelo nome do gênero
                         'notaMedia': movie_details.get('vote_average'),
                         'numeroVotos': movie_details.get('vote_count')
                     }
 
-                    # informações do artista principal
+                    # Informações do elenco principal
                     if cast_details.get('cast'):
+
                         main_actor = next((actor for actor in cast_details.get('cast') if actor.get('order') == 0), None)
+                        
                         if main_actor:
+                            movie_info['generoArtista'] = 'actress' if main_actor.get('gender') == 1 else 'actor'
+                            movie_info['personagem'] = main_actor.get('character')
                             movie_info['nomeArtista'] = main_actor.get('name')
+                            movie_info['anoNascimento'] = main_actor.get('birthday')
+                            movie_info['anoFalecimento'] = main_actor.get('deathday')
+                            movie_info['profissao'] = main_actor.get('known_for_department')
+
+                            # Busca por títulos mais conhecidos do artista
+                            known_for = main_actor.get('known_for')
+                            if known_for:
+                                known_titles = []
+                                for known in known_for:
+                                    if known.get('title'):
+                                        known_titles.append(known.get('title'))
+                                    elif known.get('name'):
+                                        known_titles.append(known.get('name'))
+                                movie_info['titulosMaisConhecidos'] = known_titles
 
                     all_movies_info.append(movie_info)
 
     return all_movies_info
 
-# chave de api do tmdb
+# Chave de API do TMDb
 api_key = ''
 
-# ids de gênero: 10752 eh o id de gênero para 'War' e 80 para 'Crime'
+# IDs de gênero: 10752 é o ID de gênero para 'War' e 80 para 'Crime'
 genre_ids = [10752, 80]
 
 movies_info = get_movies_info_by_genre(api_key, genre_ids)
 
-lista = [movies_info[i:i+100] for i in range(0, len(movies_info), 100)]
+# Dividir os dados em lotes de 100 filmes por arquivo
+chunks = [movies_info[i:i+100] for i in range(0, len(movies_info), 100)]
 
+# Conexão com o cliente do S3
 s3_client = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
 
-# enviando os dados para o bucket
-for i, conteudo in enumerate(lista):
+# Enviando os dados para o bucket
+for i, chunk in enumerate(chunks):
     s3_path = f'Raw/TMDB/JSON/Movies/2023/10/27/arquivo_{i}.json'
-    s3_client.put_object(Body=json.dumps(conteudo), Bucket='dados-desafio', Key=s3_path)
-    print(f'Arquivo {i} enviado para o S3: {s3_path}')
+    s3_client.put_object(Body=json.dumps(chunk), Bucket='', Key=s3_path)
+    print(f'Arquivo {i} de filmes enviado para o S3: {s3_path}')
 
-# Series
+# SERIES
 
 import requests
 import boto3
 import json
 
-def get_tv_details(tv_id, api_key):
-    url = f'https://api.themoviedb.org/3/tv/{tv_id}?api_key={api_key}'
+# Detalhes da série com base no ID da série
+def get_serie_details(serie_id, api_key):
+    url = f'https://api.themoviedb.org/3/tv/{serie_id}?api_key={api_key}'
     response = requests.get(url)
     if response.status_code == 200:
-        tv_data = response.json()
-        return tv_data
+        serie_data = response.json()
+        return serie_data
     else:
         return None
 
-def get_tv_cast_details(tv_id, api_key):
-    url = f'https://api.themoviedb.org/3/tv/{tv_id}/credits?api_key={api_key}'
+# Detalhes do elenco da série com base no ID da série
+def get_cast_details(serie_id, api_key):
+    url = f'https://api.themoviedb.org/3/tv/{serie_id}/credits?api_key={api_key}'
     response = requests.get(url)
     if response.status_code == 200:
         cast_data = response.json()
@@ -126,66 +148,85 @@ def get_tv_cast_details(tv_id, api_key):
     else:
         return None
 
-def get_tv_series_info_by_genre(api_key, genre_ids):
-
-    genre_names = {10765: 'War', 80: 'Crime'}
+# Informações das séries dos gêneros "War" e "Crime"
+def get_series_info_by_genre(api_key, genre_ids):
+    genre_names = {10768: 'War', 80: 'Crime'}  # Correspondência entre IDs e nomes dos gêneros
 
     base_url = 'https://api.themoviedb.org/3/discover/tv'
-    all_tv_series_info = []
+    all_series_info = []
 
     for genre_id in genre_ids:
         for page in range(1, 51):
             params = {
                 'api_key': api_key,
                 'with_genres': genre_id,
-                'page': page 
+                'page': page
             }
 
             response = requests.get(base_url, params=params)
 
             if response.status_code == 200:
-                tv_series = response.json().get('results', [])
-                for tv in tv_series:
-                    tv_id = tv.get('id')
+                series = response.json().get('results', [])
+                for serie in series:
+                    serie_id = serie.get('id')
 
-                    tv_details = get_tv_details(tv_id, api_key)
-                    if tv_details is None:
+                    serie_details = get_serie_details(serie_id, api_key)
+                    if serie_details is None:
                         continue
 
-                    cast_details = get_tv_cast_details(tv_id, api_key)
+                    cast_details = get_cast_details(serie_id, api_key)
                     if cast_details is None:
                         continue
 
-                    tv_info = {
-                        'id': tv_details.get('id'),
-                        'titulo': tv_details.get('name'),
-                        'anoLancamento': tv_details.get('first_air_date'),
-                        'tempoMinutos': tv_details.get('runtime'),
-                        'genero': genre_names.get(genre_id),
-                        'notaMedia': tv_details.get('vote_average'),
-                        'numeroVotos': tv_details.get('vote_count')
+                    serie_info = {
+                        'id': serie_details.get('id'),
+                        'titulo': serie_details.get('name'),
+                        'anoLancamento': serie_details.get('first_air_date')[:4],  # Apenas o ano de lançamento
+                        'genero': genre_names.get(genre_id),  # Substituição do ID pelo nome do gênero
+                        'notaMedia': serie_details.get('vote_average'),
+                        'numeroVotos': serie_details.get('vote_count')
                     }
 
                     if cast_details.get('cast'):
                         main_actor = next((actor for actor in cast_details.get('cast') if actor.get('order') == 0), None)
+                        
                         if main_actor:
-                            tv_info['nomeArtista'] = main_actor.get('name')
+                            serie_info['generoArtista'] = 'actress' if main_actor.get('gender') == 1 else 'actor'
+                            serie_info['personagem'] = main_actor.get('character')
+                            serie_info['nomeArtista'] = main_actor.get('name')
+                            serie_info['anoNascimento'] = main_actor.get('birthday')
+                            serie_info['anoFalecimento'] = main_actor.get('deathday')
+                            serie_info['profissao'] = main_actor.get('known_for_department')
+                            
+                            known_for = main_actor.get('known_for')
+                            if known_for:
+                                known_titles = []
+                                for known in known_for:
+                                    if known.get('title'):
+                                        known_titles.append(known.get('title'))
+                                    elif known.get('name'):
+                                        known_titles.append(known.get('name'))
+                                serie_info['titulosMaisConhecidos'] = known_titles
 
-                    all_tv_series_info.append(tv_info)
+                    all_series_info.append(serie_info)
 
-    return all_tv_series_info
+    return all_series_info
 
-api_key = ''
+api_key = ''  # Insira sua chave de API do TMDB
 
-genre_ids = [10765, 80]
+# IDs de gênero para séries
+genre_ids = [10768, 80]  # ID dos gêneros: 10768 para 'War' e 80 para 'Crime'
 
-tv_series_info = get_tv_series_info_by_genre(api_key, genre_ids)
+series_info = get_series_info_by_genre(api_key, genre_ids)
 
-lista = [tv_series_info[i:i+100] for i in range(0, len(tv_series_info), 100)]
+# Dividir os dados em lotes de 100 séries por arquivo
+chunks = [series_info[i:i+100] for i in range(0, len(series_info), 100)]
 
+# Conexão com o cliente do S3
 s3_client = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
 
-for i, conteudo in enumerate(lista):
+# Enviando os dados para o bucket
+for i, chunk in enumerate(chunks):
     s3_path = f'Raw/TMDB/JSON/Series/2023/10/27/arquivo_{i}.json'
-    s3_client.put_object(Body=json.dumps(conteudo), Bucket='dados-desafio', Key=s3_path)
-    print(f'Arquivo {i} de séries de TV enviado para o S3: {s3_path}')
+    s3_client.put_object(Body=json.dumps(chunk), Bucket='', Key=s3_path)
+    print(f'Arquivo {i} de séries enviado para o S3: {s3_path}')
