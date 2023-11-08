@@ -122,6 +122,7 @@ for i, chunk in enumerate(chunks):
     s3_client.put_object(Body=json.dumps(chunk), Bucket='', Key=s3_path)
     print(f'Arquivo {i} de filmes enviado para o S3: {s3_path}')
 
+
 # SERIES
 
 import requests
