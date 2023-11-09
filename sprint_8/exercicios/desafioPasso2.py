@@ -177,11 +177,13 @@ def get_series_info_by_genre(api_key, genre_ids):
 
                     serie_info = {
                         'id': serie_details.get('id'),
-                        'titulo': serie_details.get('name'),
-                        'anoLancamento': serie_details.get('first_air_date')[:4],  # Apenas o ano de lançamento
-                        'genero': genre_names.get(genre_id),  # Substituição do ID pelo nome do gênero
+                        'tituloPrincipal': serie_details.get('name'),
+                        'tituloOriginal': serie_details.get('original_name'),
+                        'anoLancamento': serie_details.get('first_air_date')[:4],
+                        'tempoMinutos': serie_details.get('episode_run_time')[0] if serie_details.get('episode_run_time') else None,
+                        'genero': genre_names.get(genre_id),
                         'notaMedia': serie_details.get('vote_average'),
-                        'numeroVotos': serie_details.get('vote_count')
+                        'numeroVotos': serie_details.get('vote_count'),
                     }
 
                     if cast_details.get('cast'):
