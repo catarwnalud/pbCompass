@@ -9,7 +9,7 @@ import requests
 import boto3
 import json
 
-# Detalhes do filme com base no ID do filme
+
 def get_movie_details(movie_id, api_key):
     url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}'
     response = requests.get(url)
@@ -19,7 +19,6 @@ def get_movie_details(movie_id, api_key):
     else:
         return None
 
-# Detalhes do elenco do filme com base no ID do filme
 def get_cast_details(movie_id, api_key):
     url = f'https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key={api_key}'
     response = requests.get(url)
@@ -29,10 +28,8 @@ def get_cast_details(movie_id, api_key):
     else:
         return None
 
-# Informações dos filmes dos gêneros "War" e "Crime"
 def get_movies_info_by_genre(api_key, genre_ids):
 
-    # Correspondência entre IDs e nomes dos gêneros
     genre_names = {10752: 'War', 80: 'Crime'}
 
     base_url = 'https://api.themoviedb.org/3/discover/movie'
@@ -53,28 +50,28 @@ def get_movies_info_by_genre(api_key, genre_ids):
                 for movie in movies:
                     movie_id = movie.get('id')
 
-                    # Detalhes do filme
+        
                     movie_details = get_movie_details(movie_id, api_key)
                     if movie_details is None:
                         continue
 
-                    # Detalhes do elenco
+            
                     cast_details = get_cast_details(movie_id, api_key)
                     if cast_details is None:
                         continue
-
-                    # Informações
+    
                     movie_info = {
                         'id': movie_details.get('id'),
-                        'titulo': movie_details.get('title'),
-                        'anoLancamento': movie_details.get('release_date')[:4],  # Apenas o ano de lançamento
+                        'tituloPrincipal': movie_details.get('title'),
+                        'tituloOriginal': movie_details.get('original_title'),
+                        'anoLancamento': movie_details.get('release_date')[:4],  
                         'tempoMinutos': movie_details.get('runtime'),
-                        'genero': genre_names.get(genre_id),  # Substituição do ID pelo nome do gênero
+                        'genero': genre_names.get(genre_id),
                         'notaMedia': movie_details.get('vote_average'),
                         'numeroVotos': movie_details.get('vote_count')
                     }
 
-                    # Informações do elenco principal
+       
                     if cast_details.get('cast'):
 
                         main_actor = next((actor for actor in cast_details.get('cast') if actor.get('order') == 0), None)
@@ -87,7 +84,7 @@ def get_movies_info_by_genre(api_key, genre_ids):
                             movie_info['anoFalecimento'] = main_actor.get('deathday')
                             movie_info['profissao'] = main_actor.get('known_for_department')
 
-                            # Busca por títulos mais conhecidos do artista
+                   
                             known_for = main_actor.get('known_for')
                             if known_for:
                                 known_titles = []
@@ -102,24 +99,23 @@ def get_movies_info_by_genre(api_key, genre_ids):
 
     return all_movies_info
 
-# Chave de API do TMDb
+
 api_key = ''
 
-# IDs de gênero: 10752 é o ID de gênero para 'War' e 80 para 'Crime'
+
 genre_ids = [10752, 80]
 
 movies_info = get_movies_info_by_genre(api_key, genre_ids)
 
-# Dividir os dados em lotes de 100 filmes por arquivo
+
 chunks = [movies_info[i:i+100] for i in range(0, len(movies_info), 100)]
 
-# Conexão com o cliente do S3
+
 s3_client = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
 
-# Enviando os dados para o bucket
 for i, chunk in enumerate(chunks):
     s3_path = f'Raw/TMDB/JSON/Movies/2023/10/27/arquivo_{i}.json'
-    s3_client.put_object(Body=json.dumps(chunk), Bucket='', Key=s3_path)
+    s3_client.put_object(Body=json.dumps(chunk), Bucket='dados-desafio', Key=s3_path)
     print(f'Arquivo {i} de filmes enviado para o S3: {s3_path}')
 
 
