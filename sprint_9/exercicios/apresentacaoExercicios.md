@@ -21,7 +21,7 @@
 
 -  Tarefa 3: Desafio Parte 3 - Processamento da Trusted 
 
-    - [Código]()
+    - [Código](https://github.com/catarwnalud/pbCompass/blob/master/sprint_9/exercicios/desafio_trusted.py)
 
 #
 
