@@ -84,7 +84,7 @@ data_frame = data_frame.select(colunas_ordenadas) # Ordena as colunas
 
 data_frame = data_frame.withColumnRenamed("tituloPincipal", "tituloPrincipal") # Trata erro do nome da coluna
 
-for column in data_frame.columns: # Trata os arquivos nulos
+for column in data_frame.columns: # Trata os dados nulos
    data_frame = data_frame.withColumn(column, when(col(column) == "\\N", "NULL").otherwise(col(column)))
    
 dynamic_frame = DynamicFrame.fromDF(data_frame, glueContext, "dynamic_frame_name")
@@ -121,7 +121,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
-source_file = "s3://dados-desafio/Raw/TMDB/JSON/Movies/2023/10/27/arquivo_*.json" # Local dos arquivos
+source_file = "s3://dados-desafio/Raw/TMDB/JSON/Movies/2023/10/27/arquivo_*.json" # Local dos arquivos_*.json
 target_path = "s3://dados-desafio/Trusted/TMDB/Movies/2023/10/27/" # Destino dos dados tratados
 
 data_frame = spark.read.json(source_file)
@@ -140,7 +140,7 @@ data_frame = data_frame.withColumn("notaMedia", format_number(col("notaMedia"), 
 
 dynamic_frame = DynamicFrame.fromDF(data_frame, glueContext, "dynamic_frame_name")
 
-glueContext.write_dynamic_frame.from_options( # Envia os dados para o destino
+glueContext.write_dynamic_frame.from_options( # Envia os dados para o destino no formato parquet
     frame = dynamic_frame,
     connection_type = "s3",
     connection_options = {"path": target_path},
@@ -173,7 +173,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
-source_file = "s3://dados-desafio/Raw/TMDB/JSON/Series/2023/10/27/arquivo_*.json" # Local dos arquivos
+source_file = "s3://dados-desafio/Raw/TMDB/JSON/Series/2023/10/27/arquivo_*.json" # Local dos arquivo_*.json
 target_path = "s3://dados-desafio/Trusted/TMDB/Series/2023/10/27/" # Destino dos dados tratados
 
 data_frame = spark.read.json(source_file)
