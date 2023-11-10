@@ -16,3 +16,17 @@
 *Feitos no SQL Online IDE*
 
 #
+
+### Seção 3: Desafio - Parte |||
+
+-  Tarefa 3: Desafio Parte 3 - Processamento da Trusted 
+
+    - [Código]()
+
+#
+
+-  Tarefa 5: Desafio Parte 3 -  Processamento da Refined
+
+    - [Código]()
+
+#
