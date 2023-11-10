@@ -121,7 +121,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
-source_file = "s3://dados-desafio/Raw/TMDB/JSON/Movies/2023/10/27/arquivo_*.json" # Local dos arquivos_*.json
+source_file = "s3://dados-desafio/Raw/TMDB/JSON/Movies/2023/10/27/arquivo_*.json" # Local do arquivos_*.json
 target_path = "s3://dados-desafio/Trusted/TMDB/Movies/2023/10/27/" # Destino dos dados tratados
 
 data_frame = spark.read.json(source_file)
@@ -173,7 +173,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
-source_file = "s3://dados-desafio/Raw/TMDB/JSON/Series/2023/10/27/arquivo_*.json" # Local dos arquivo_*.json
+source_file = "s3://dados-desafio/Raw/TMDB/JSON/Series/2023/10/27/arquivo_*.json" # Local do arquivo_*.json
 target_path = "s3://dados-desafio/Trusted/TMDB/Series/2023/10/27/" # Destino dos dados tratados
 
 data_frame = spark.read.json(source_file)
