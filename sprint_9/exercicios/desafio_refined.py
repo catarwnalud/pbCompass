@@ -3,6 +3,7 @@
 # Usando os arquivos tratados da camada Trusted, foi unido os dados de filmes, feito a modelagem dimensional e mandado para a camada
 # Refined, onde os dados estão prontos para serem utilizados na análise.
 
+
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -19,32 +20,29 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-path_movies_csv = 's3://dados-desafio/Trusted/Movies/' # Local na Trusted dos arquivos de filmes provindos do CSV
-path_movies_tmdb = 's3://dados-desafio/Trusted/TMDB/Movies/2023/10/27/' # Local na Trusted dos arquivos de filmes provindos do TMDB 
+path_movies_csv = 's3://dados-desafio/Trusted/Movies/'  # Local na Trusted dos arquivos de filmes provindos do CSV
+path_movies_tmdb = 's3://dados-desafio/Trusted/TMDB/Movies/2023/10/27/'  # Local na Trusted dos arquivos de filmes provindos do TMDB
 
-output_path_dim = 's3://dados-desafio/Refined/Movies/Dim_movies/' # Destino dos dados considerados dimensionais na Refined
-output_path_fato = 's3://dados-desafio/Refined/Movies/Fato_movies/' # Destino dos dados considerados fatos na Refined
+output_path = 's3://dados-desafio/Refined/Movies/' # Destino dos dados na Refined
 
 df_movies_csv = spark.read.parquet(path_movies_csv)
 df_movies_tmdb = spark.read.parquet(path_movies_tmdb)
 
 # Seleção das colunas necessárias para minha análise 
-df_movies_csv = df_movies_csv.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 
-                                      'tempoMinutos', 'genero', 'notaMedia', 'numeroVotos'])
-df_movies_tmdb = df_movies_tmdb.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 
-                                        'tempoMinutos', 'genero', 'notaMedia', 'numeroVotos'])
+df_movies_csv = df_movies_csv.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 'tempoMinutos',
+                                       'genero', 'notaMedia', 'numeroVotos'])
+df_movies_tmdb = df_movies_tmdb.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 'tempoMinutos', 
+                                        'genero', 'notaMedia', 'numeroVotos'])
 
 df_movies = df_movies_csv.union(df_movies_tmdb) # União dos dados do CSV e do TMDB
 
 df_movies = df_movies.dropDuplicates(['tituloPrincipal', 'tituloOriginal']) # Eliminação dos dados repetidos
 
-# Modelagem Dimensional
-dim_movies = df_movies.select(['id', 'tituloPrincipal', 'tituloOriginal', 'genero', 'anoLancamento']) # Colunas considerados dimensionais
-fato_movies = df_movies.select(['tituloPrincipal', 'tituloOriginal', 'notaMedia', 'numeroVotos', 'tempoMinutos']) # Colunas considerados fatos
+df = df_movies.select(['id', 'tituloPrincipal', 'tituloOriginal', 'genero', 'anoLancamento',
+                        'notaMedia', 'numeroVotos', 'tempoMinutos']) 
 
 # Envio de ambos para a pasta 'Movies/' da Refined
-dim_movies.write.mode('overwrite').csv(output_path_dim) 
-fato_movies.write.mode('overwrite').csv(output_path_fato)
+df.write.mode('overwrite').csv(output_path)
 
 job.commit()
 
