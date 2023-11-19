@@ -3,7 +3,6 @@
 # Usando os arquivos tratados da camada Trusted, foi unido os dados de filmes, feito a modelagem dimensional e mandado para a camada
 # Refined, onde os dados estão prontos para serem utilizados na análise.
 
-
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -20,7 +19,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-path_movies_csv = 's3://dados-desafio/Trusted/Movies/'  # Local na Trusted dos arquivos de filmes provindos do CSV
+path_movies_csv = 's3://dados-desafio/Trusted/Movies/' # Local na Trusted dos arquivos de filmes provindos do CSV
 path_movies_tmdb = 's3://dados-desafio/Trusted/TMDB/Movies/2023/10/27/'  # Local na Trusted dos arquivos de filmes provindos do TMDB
 
 output_path = 's3://dados-desafio/Refined/Movies/' # Destino dos dados na Refined
@@ -29,17 +28,22 @@ df_movies_csv = spark.read.parquet(path_movies_csv)
 df_movies_tmdb = spark.read.parquet(path_movies_tmdb)
 
 # Seleção das colunas necessárias para minha análise 
-df_movies_csv = df_movies_csv.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 'tempoMinutos',
-                                       'genero', 'notaMedia', 'numeroVotos'])
-df_movies_tmdb = df_movies_tmdb.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', 'tempoMinutos', 
-                                        'genero', 'notaMedia', 'numeroVotos'])
+df_movies_csv = df_movies_csv.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', "classificacao_ano",
+                                    'tempoMinutos', "tempoHoras", "classificacao_horas_numerica", "classificacao_horas_escrita",
+                                    'genero', 'notaMedia', "classificacao_nota_escrita",  "classificacao_nota_numerica", 'numeroVotos',
+                                    "classificacao__votos_escrita"])
+df_movies_tmdb = df_movies_tmdb.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', "classificacao_ano",
+                                    'tempoMinutos', "tempoHoras", "classificacao_horas_numerica", "classificacao_horas_escrita",
+                                    'genero', 'notaMedia', "classificacao_nota_escrita",  "classificacao_nota_numerica", 'numeroVotos',
+                                    "classificacao__votos_escrita"])
 
 df_movies = df_movies_csv.union(df_movies_tmdb) # União dos dados do CSV e do TMDB
-
 df_movies = df_movies.dropDuplicates(['tituloPrincipal', 'tituloOriginal']) # Eliminação dos dados repetidos
 
-df = df_movies.select(['id', 'tituloPrincipal', 'tituloOriginal', 'genero', 'anoLancamento',
-                        'notaMedia', 'numeroVotos', 'tempoMinutos']) 
+df = df_movies.select(['id', 'tituloPrincipal', 'tituloOriginal', 'anoLancamento', "classificacao_ano",
+                        'tempoMinutos', "tempoHoras", "classificacao_horas_numerica", "classificacao_horas_escrita",
+                        'genero', 'notaMedia', "classificacao_nota_escrita",  "classificacao_nota_numerica", 'numeroVotos',
+                        "classificacao__votos_escrita"])
 
 # Envio de ambos para a pasta 'Movies/' da Refined
 df.write.mode('overwrite').csv(output_path)
