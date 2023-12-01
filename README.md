@@ -381,3 +381,63 @@
   ### Why Analytics for Games
 
 #
+
+  # Sprint 7
+
+  ### Learn By Example: Hadoop, MapReduce for Big Data problems
+
+#
+
+  ### Formação Spark com Pyspark : o Curso Completo
+
+#
+
+  ###  Desafio Parte 1 - ETL
+  
+#
+
+  # Sprint 8
+
+  ### Após entender o framework Apache Spark como utilizá-lo com alguns serviços da AWS para realizar o processamento de dados na nuvem?
+
+#
+
+  ### Desafio Parte 2 - Ingestão de dados do TMBD
+
+#
+
+  # Sprint 9
+
+  ### Modelagem de dados
+
+  - Modelagem Relacional
+
+  - Modelagem Dimensional
+
+#
+
+  ### Desafio Parte 3 - Processamento da Trusted
+
+#
+
+  ### Desafio Parte 3 - Modelagem de dados da Refined
+
+#
+
+  ### Desafio Parte 3 - Processamento da Refined
+
+#
+
+  # Sprint 10
+
+  ### Complete Introduction to AWS QuickSight [2023 Edition]
+
+#
+
+  ### Desafio Parte 4 - Consumo e Apresentação dos Dados
+
+#
+
+  ### Desafio - Entrega Final
+  
+#
