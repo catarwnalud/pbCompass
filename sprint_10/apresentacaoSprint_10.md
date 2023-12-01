@@ -16,4 +16,12 @@
 
   ### Complete Introduction to AWS QuickSight [2023 Edition]
 
-#
+  #
+
+  ### Desafio Parte 4 - Consumo e Apresentação dos Dados
+
+  #
+
+  ### Desafio - Entrega Final
+  
+  #
