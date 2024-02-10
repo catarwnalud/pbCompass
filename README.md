@@ -7,7 +7,7 @@
 
 📌 Campo Grande, MS
 
-👩‍💻 Sistemas de Informação 4/8 - UFMS
+👩‍💻 Engenharia de Software  1/8 - UFMS
 
 🌐 Acesse meu [Portifólio](https://catarwnalud.github.io/) para me conhecer mais!
 
