@@ -7,7 +7,7 @@
 
 📌 Campo Grande, MS
 
-👩‍💻 Engenharia de Software  1/8 - UFMS
+👩‍💻 Engenharia de Software - UFMS
 
 🌐 Acesse meu [Portifólio](https://catarwnalud.github.io/) para me conhecer mais!
 
